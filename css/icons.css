@@ -1,0 +1,12 @@
+.fa {
+  filter: drop-shadow(0px 0px 5px var(--shadow-fa, rgba(255, 255, 255, .8)));
+  &.fa-close::before {
+    content: url(../img/icons/close.svg?color=white);
+  }
+  &.fa-home::before {
+    content: url(../img/icons/home.svg);
+  }
+  &.fa-bookmark::before {
+    content: url(../img/icons/bookmark.svg);
+  }
+}
