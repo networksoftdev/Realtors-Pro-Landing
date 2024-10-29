@@ -1,4 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xhtml" fill="none" viewBox="0 0 24 24"
      stroke-width="1.5" class="size-6" style="stroke: var(--color-fa, currentColor)">
   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-</svg>
+<script id="svgx-script" xmlns="http://www.w3.org/2000/svg" type="text/javascript" >const params = new URLSearchParams(window.location.search)
+function setStyle (entries) {
+    const {done, value} = entries.next()
+    if (done) return
+    const newStyle = {[value.shift()]: value.pop()}
+    // console.debug(newStyle)
+    document.querySelectorAll('path')?.forEach((path)=>{
+        path.style[Object.keys(newStyle).shift()] = Object.values(newStyle).shift()
+    })
+    setStyle(entries)
+}
+setStyle(params.entries())
+</script></svg>

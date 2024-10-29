@@ -1,5 +1,16 @@
 .fa {
-  filter: drop-shadow(0px 0px 5px var(--shadow-fa, rgba(255, 255, 255, .8)));
+  filter: drop-shadow(0px 0px 2px var(--shadow-fa, rgba(255, 255, 255, .6)));
+
+  &:hover{
+    filter: drop-shadow(0px 0px 5px var(--shadow-fa, rgba(255, 255, 255, .8)));
+  }
+
+  &::before{
+    display: block;
+    max-width: 2em;
+    margin: 0 auto;
+  }
+
   &.fa-close::before {
     content: url(../img/icons/close.svg?color=white);
   }
@@ -8,5 +19,34 @@
   }
   &.fa-bookmark::before {
     content: url(../img/icons/bookmark.svg);
+  }
+  &.fa-square-stack::before {
+    content: url(../img/icons/square-stack.svg);
+  }
+  &.fa-business::before {
+    content: url(../img/icons/business.svg);
+  }
+  &.fa-shopping-cart::before {
+    content: url(../img/icons/shopping-cart.svg);
+  }
+  &.fa-chat-bubble::before {
+    content: url(../img/icons/chat-bubble.svg);
+  }
+  &.fa-bars::before {
+    content: url(../img/icons/arrow-left-circle.svg);
+  }
+}
+
+.icon-offcanvas-menu {
+  display: none;
+}
+@media (max-device-width: 991px) {
+  .icon-mobile-offcanvas-menu {
+    display: block;
+  }
+}
+@media (min-device-width: 992px) {
+  .icon-mobile-offcanvas-menu {
+    display: none;
   }
 }

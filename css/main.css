@@ -576,6 +576,14 @@ video {
   margin-bottom: 0px;
 }
 
+.table {
+  display: table;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
 .hidden {
   display: none;
 }
@@ -614,6 +622,10 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.align-top {
+  vertical-align: top;
 }
 
 .text-white {

@@ -24,7 +24,13 @@ const RenderMenuItems = (menu, {items}) => {
     })
     const a = document.createElement('a')
     a.href=element.href
+    a.dataset.title = element.title
     a.innerText=element.title
+    if ((element.icon && element.icon.length > 0) || element.title === "Home") {
+      const i = document.createElement('i')
+      i.classList.add("fa",`fa-${element.icon ?? 'home'}`)
+      a.prepend(i)
+    }
     li.appendChild(a)
     menu.appendChild(li)
     console.debug('Menu element', li)

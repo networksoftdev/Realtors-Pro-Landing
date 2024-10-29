@@ -3,6 +3,7 @@ import * as MENUS from "./menu.js"
 
 
 const MENU_SELECTORS = "[data-menu]"
+const  TOGGLE_MENU_SELECTORS = "[data-toggle-menu]"
 
 function menu_render({selectors = MENU_SELECTORS, post_render = undefined}) {
   console.debug('menu_render:', selectors)
@@ -14,6 +15,18 @@ function menu_render({selectors = MENU_SELECTORS, post_render = undefined}) {
     if (post_render) {
       post_render(menu)
     }
+  })
+}
+
+function toggle_menu(selectors = TOGGLE_MENU_SELECTORS) {
+  document.querySelectorAll(selectors)?.forEach(toggle => {
+    console.debug('toggle_menu:', toggle)
+    toggle.addEventListener('click', (evt) => {
+      const menu = document.querySelector(`${toggle.dataset.toggleMenu}`)
+      console.debug('toggle_menu:', menu)
+      menu.classList.toggle(toggle.dataset.toggleClass ?? 'active')
+      toggle.classList.toggle(toggle.dataset.toggle ?? 'done')
+    })
   })
 }
 
@@ -39,5 +52,6 @@ document.addEventListener('DOMContentLoaded', (dom_evt) => {
   menu_render({
     post_render: render_sidebar_menu
   })
+  toggle_menu()
 })
 
