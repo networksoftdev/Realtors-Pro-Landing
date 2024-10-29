@@ -30,6 +30,8 @@ const RenderMenuItems = (menu, {items}) => {
       const i = document.createElement('i')
       i.classList.add("fa",`fa-${element.icon ?? 'home'}`)
       a.prepend(i)
+      const span = document.createElement('span')
+      li.appendChild(span)
     }
     li.appendChild(a)
     menu.appendChild(li)

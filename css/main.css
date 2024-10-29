@@ -633,8 +633,8 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.drop-shadow-\[1px_1px_0\.5px_rgba\(255\2c 255\2c 255\2c 0\.4\)\] {
-  --tw-drop-shadow: drop-shadow(1px 1px 0.5px rgba(255,255,255,0.4));
+.drop-shadow-\[0\.5px_0\.5px_0\.5px_rgba\(255\2c 255\2c 255\2c 0\.4\)\] {
+  --tw-drop-shadow: drop-shadow(0.5px 0.5px 0.5px rgba(255,255,255,0.4));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 

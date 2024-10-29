@@ -3,7 +3,7 @@ import * as MENUS from "./menu.js"
 
 
 const MENU_SELECTORS = "[data-menu]"
-const  TOGGLE_MENU_SELECTORS = "[data-toggle-menu]"
+const  TOGGLE_MENU_SELECTORS = "[data-toggle-menu], ul>li.current-menu span"
 
 function menu_render({selectors = MENU_SELECTORS, post_render = undefined}) {
   console.debug('menu_render:', selectors)
@@ -18,14 +18,19 @@ function menu_render({selectors = MENU_SELECTORS, post_render = undefined}) {
   })
 }
 
+const MAIN_MENU_SELECTOR = "header [data-menu=main_menu]";
+
 function toggle_menu(selectors = TOGGLE_MENU_SELECTORS) {
   document.querySelectorAll(selectors)?.forEach(toggle => {
     console.debug('toggle_menu:', toggle)
     toggle.addEventListener('click', (evt) => {
-      const menu = document.querySelector(`${toggle.dataset.toggleMenu}`)
-      console.debug('toggle_menu:', menu)
-      menu.classList.toggle(toggle.dataset.toggleClass ?? 'active')
-      toggle.classList.toggle(toggle.dataset.toggle ?? 'done')
+      const menu = document.querySelector(`${toggle.dataset.toggleMenu ?? MAIN_MENU_SELECTOR}`)
+      console.debug('toggle_evt:', menu, toggle.dataset.hasOwnProperty('toggle'))
+      const dataToggle = toggle.dataset.hasOwnProperty('toggle') ? toggle.dataset.toggle : 'done';
+      console.debug('toggle_evt(2):', menu, toggle.dataset.hasOwnProperty('toggleClass'))
+      const dataToggleClass = toggle.dataset.hasOwnProperty('toggleClass') ? toggle.dataset.toggleClass : 'active';
+      menu.classList.toggle(dataToggleClass)
+      toggle.classList.toggle(dataToggle)
     })
   })
 }
