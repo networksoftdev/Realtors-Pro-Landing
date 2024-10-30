@@ -13,7 +13,7 @@ const RenderElement = function({element, rendering, ...args}) {
 }
 
 const RenderMenuItems = (menu, {items}) => {
-  console.debug("RenderMenuItems?:", menu, items)
+  console.debug("RenderMenuItems():", menu, items)
   items.forEach(element => {
     const li = document.createElement('li')
     if (element.current) {
