@@ -1,6 +1,8 @@
 import {Menu} from "./render.js"
 import * as MENUS from "./menu.js"
+import {EventTracker, test as testEventTracker} from "./EventTracker";
 
+const events = new EventTracker()
 
 const MENU_SELECTORS = "[data-menu]"
 const  TOGGLE_MENU_SELECTORS = "[data-toggle-menu], header ul>li.current-menu span"
@@ -36,7 +38,8 @@ function toggle_menu(selectors = TOGGLE_MENU_SELECTORS) {
   console.debug('toggle_menu(): length:', document.querySelectorAll(selectors))
   document.querySelectorAll(selectors)?.forEach(toggle => {
     if (toggle.dataset.rendered) return
-    toggle.addEventListener('click', toggleMenuListener)
+    // toggle.addEventListener('click', toggleMenuListener)
+    addTrackedEvent({element: toggle, event: 'click', listener: toggleMenuListener})
     toggle.dataset.rendered = true.toString()
     console.debug("toggle_menu(evt):", toggle)
   })
@@ -67,5 +70,17 @@ function domContentLoadedListener(dom_evt) {
   toggle_menu()
 }
 
-document.addEventListener('DOMContentLoaded', domContentLoadedListener/*, {passive: true}*/)
+function addTrackedEvent({element = document, event = 'DOMContentLoaded', listener = domContentLoadedListener}) {
+  events.element = element
+  if (events.getEventListeners()?.length <= 0 || events.getEventListeners().filter(e => e.event === event && e.listener === listener).length <= 0) {
+    events.addEventListener(event, listener)
+  }
+}
+
+/** execution */
+
+testEventTracker()
+addTrackedEvent({});
+
+// document.addEventListener('DOMContentLoaded', domContentLoadedListener/*, {passive: true}*/)
 
