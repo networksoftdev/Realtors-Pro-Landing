@@ -633,8 +633,8 @@ video {
   transform: none;
 }
 
-.bg-\[rgba\(255\2c 255\2c 255\2c 0\.02\)\] {
-  background-color: rgba(255,255,255,0.02);
+.bg-\[rgba\(20\2c 20\2c 20\2c 0\.6\)\] {
+  background-color: rgba(20,20,20,0.6);
 }
 
 .bg-primary {
