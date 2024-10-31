@@ -252,6 +252,13 @@ textarea {
 /** custom */
 
 @media (max-device-width: 991px) {
+  .smart-sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+  }
+
   header ul.offcanvas-menu.inview-right {
     position: fixed;
     bottom: 0;
@@ -265,9 +272,9 @@ textarea {
     border-radius: 1.2em 1.2em 0 0;
     z-index: 11;
 
-    &:not(.active) li:not(.current-menu) {
+    /*&:not(.active) li:not(.current-menu) {
       display: none;
-    }
+    }*/
 
     &.active {
       padding: .6em .2em;
@@ -276,12 +283,12 @@ textarea {
     .current-menu-item {
       display: block;
       position: fixed;
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent 70%);
+      background: linear-gradient(200deg, rgba(85, 85, 85, 0.1), transparent 60%);
       min-width: 6em;
-      height: 7em;
+      /*height: 7em;*/
       align-content: center;
-      bottom: 0;
-      right: 0;
+      /*bottom: 0;
+      right: 0;*/
       border-radius: 1.5em 0 0 0;
       z-index: 10;
 

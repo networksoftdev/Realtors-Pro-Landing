@@ -1,5 +1,6 @@
 const MENU_TAG = 'nav'
-const CURRENT_MENU_ITEM_CLASSLIST = ["current-menu-item", "current-menu"]
+const CURRENT_MENU_ITEM_CLASSLIST = ["current-menu-item", "current-menu",
+  /*"bottom-0",*/ "top-0", /*"right-0",*/ "left-0", /* "h-28",*/ "h-20", "my-[0.4rem]"]
 const MENU_ITEM_CLASSLIST = ["menu-item", "menu-item-$"]
 
 const RenderElement = function({element, rendering, ...args}) {
@@ -12,12 +13,16 @@ const RenderElement = function({element, rendering, ...args}) {
   return element
 }
 
+const CURRENT_MENU_ITEM_SPAN_CLASSLIST = ["hidden"];
 const RenderMenuItems = (menu, {items}) => {
   console.debug("RenderMenuItems():", menu, items)
   items.forEach(element => {
     const li = document.createElement('li')
     if (element.current) {
       CURRENT_MENU_ITEM_CLASSLIST.forEach(cls=>li.classList.add(cls))
+      const span = document.createElement('span')
+      span.classList.add(...CURRENT_MENU_ITEM_SPAN_CLASSLIST)
+      li.prepend(span)
     }
     MENU_ITEM_CLASSLIST.forEach(cls=> {
       li.classList.add((cls.endsWith("$")?cls.replaceAll("$", (element.title.toLowerCase().replaceAll(" ", "-"))):cls))
@@ -30,8 +35,6 @@ const RenderMenuItems = (menu, {items}) => {
       const i = document.createElement('i')
       i.classList.add("fa",`fa-${element.icon ?? 'home'}`)
       a.prepend(i)
-      const span = document.createElement('span')
-      li.appendChild(span)
     }
     li.appendChild(a)
     menu.appendChild(li)
