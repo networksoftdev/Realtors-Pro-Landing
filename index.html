@@ -25,12 +25,12 @@
 </head>
 
 <body class="bg-primary text-white group">
-<header class="bg-[rgba(255,255,255,0.02)]">
+<header class="">
   <div aria-hidden="true" class="pre-sticky h-auto onSticky:h-0 hidden"></div>
   <div class="header-is-sticky smart-sticky ease-in-out transform-none hidden onSticky:translate-y-[-20px]">
     sticky header
   </div>
-  <div class="smart-sticky">
+  <div class="smart-sticky bg-[rgba(255,255,255,0.02)]">
     <div class="row table clr w-[90%] my-0 mx-auto">
       <div class="left table-cell align-top header-left group-has-[header_ul_li.current-menu.top-0.left-0]:pl-24">
         <div class="logo-header-left pt-6 pb-3">
@@ -62,7 +62,7 @@
     </div>
   </div>
 </header>
-<main>
+<main class="group-has-[.smart-sticky_.logo-header-left]:mt-24">
   <p>Hello world! This is HTML5 Boilerplate.</p>
 </main>
 <footer></footer>

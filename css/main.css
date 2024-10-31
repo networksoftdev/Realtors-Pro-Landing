@@ -671,6 +671,10 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.group:has(.smart-sticky .logo-header-left) .group-has-\[\.smart-sticky_\.logo-header-left\]\:mt-24 {
+  margin-top: 6rem;
+}
+
 .group:has(.active-offcanvas) .group-has-\[\.active-offcanvas\]\:block {
   display: block;
 }
