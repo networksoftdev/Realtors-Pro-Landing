@@ -18,3 +18,17 @@ export const main_menu = [
     title: "Contacto", href: "/contact", icon: "chat-bubble"
   }
 ]
+export const quickstart_menu = [
+  {
+    title: "Empresa", href: "/", icon: "bookmark"
+  },
+  {
+    title: "Home", href: "/", current: true
+  },
+  {
+    title: "Comprar", href: "/buy", icon: "shopping-cart"
+  },
+  {
+    title: "Contacto", href: "/contact", icon: "chat-bubble"
+  }
+]
