@@ -15,12 +15,16 @@
     "mtailwind": "tailwind -i ./css/tailwind.css -o ./css/main.css --minify",
     "tailwind": "tailwind -i ./css/tailwind.css -o ./css/main.css",
     "start": "npm run tailwind && webpack serve --config webpack.config.dev.js --host 0.0.0.0",
+    "bsync": "npx browser-sync start --proxy '0.0.0.0:8090' --files 'css/*.css, js/*.js, *.html' --no-open",
+    "dev": "npx concurrently \"npm run start\" \"npm run bsync\"",
     "wstart": "npm run tailwind && webpack serve --open --config webpack.config.dev.js",
     "build": "npm run mtailwind && webpack --config webpack.config.prod.js",
     "all": "npm run build && npm run start"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.0",
