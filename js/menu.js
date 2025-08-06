@@ -20,13 +20,25 @@ export const main_menu = [
 ]
 export const quickstart_menu = [
   {
-    title: "Empresa", href: "/", icon: "bookmark"
-  },
-  {
     title: "Home", href: "/", current: true
   },
   {
-    title: "Comprar", href: "/buy", icon: "shopping-cart"
+    title: "Empresa", href: "/", icon: "bookmark"
+  },
+  {
+    title: "Venta", href: "/selling", icon: "selling"
+  },
+  {
+    title: "Renta", href: "/renting", icon: "renting"
+  },
+  {
+    title: "Compra", href: "/buying", icon: "shopping-cart"
+  },
+  {
+    title: "Realtors University", href: "/university", icon: "chat-bubble", featured: true
+  },
+  {
+    title: "Plataformas", href: "/apps", icon: "chat-bubble"
   },
   {
     title: "Contacto", href: "/contact", icon: "chat-bubble"

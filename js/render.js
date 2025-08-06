@@ -1,6 +1,6 @@
 const MENU_TAG = 'nav'
 const CURRENT_MENU_ITEM_CLASSLIST = ["current-menu-item", "current-menu",
-  /*"bottom-0",*/ "top-0", /*"right-0",*/ "left-0", /* "h-28",*/ "h-20", "my-[0.4rem]"]
+  /*"bottom-0",*/ /*"top-0", *//*"right-0",*/ /*"left-0",*/ /* "h-28",*/ /*"h-20", "my-[0.4rem]"*/]
 const MENU_ITEM_CLASSLIST = ["menu-item", "menu-item-$"]
 
 const RenderElement = function({element, rendering, ...args}) {
