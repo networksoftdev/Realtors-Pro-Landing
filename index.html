@@ -30,13 +30,15 @@
   <div class="header-is-sticky smart-sticky ease-in-out transform-none hidden onSticky:translate-y-[-20px]">
     sticky header
   </div>
-  <div class="smart-sticky bg-[rgba(20,20,20,0.6)]">
+  <div class="smart-sticky">
     <div class="row table clr w-[90%] my-0 mx-auto">
-      <div class="left table-cell align-top header-left group-has-[header_ul_li.current-menu.top-0.left-0]:pl-24">
-        <div class="logo-header-left pt-6 pb-3">
+      <div
+        class="left table-cell align-top header-left">
+        <div class="logo-header-left py-[1.2rem]">
           <div class="logo-img">
             <a href="/">
-              <img src="img/logo.svg" alt="Realtors Pro" class="drop-shadow-[0.5px_0.5px_0.5px_rgba(255,255,255,0.4)] h-11">
+              <img src="img/logo.svg" alt="Realtors Pro"
+                   class="drop-shadow-[0.5px_0.5px_0.5px_rgba(255,255,255,0.4)] h-11">
             </a>
           </div>
           <div class="logo-text hidden">
@@ -52,7 +54,8 @@
           <i class="fa fa-bars icon-offcanvas-menu inview-right">
             <span></span>
           </i>
-          <i data-toggle-menu=".sidebar-offcanvas-area" data-toggle-class="active-offcanvas" class="fa fa-bars icon-mobile-offcanvas-menu inview-right done:hidden">
+          <i data-toggle-menu=".sidebar-offcanvas-area" data-toggle-class="active-offcanvas"
+             class="fa fa-bars icon-mobile-offcanvas-menu inview-right done:hidden">
             <span></span>
           </i>
           <ul data-menu="quickstart_menu" class="offcanvas-menu inview-right">
@@ -62,8 +65,54 @@
     </div>
   </div>
 </header>
-<main class="group-has-[.smart-sticky_.logo-header-left]:mt-24">
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+<main class="group-has-[.smart-sticky_.logo-header-left]:mt-20 group-has-[.smart-sticky_.logo-header-left]:mb-[10em] md:group-has-[.smart-sticky_.logo-header-left]:mb-0">
+  <!-- Your content here -->
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-4">Welcome to Realtors Pro</h1>
+    <p class="text-lg mb-6">This is a sample page to demonstrate the layout and design of the Realtors Pro
+      application.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-xl font-semibold mb-2">Feature 1</h2>
+        <p>Details about feature 1.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-xl font-semibold mb-2">Feature 2</h2>
+        <p>Details about feature 2.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-xl font-semibold mb-2">Feature 3</h2>
+        <p>Details about feature 3.</p>
+      </div>
+    </div>
+    <div class="mt-8">
+      <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+      <form class="space-y-4">
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+          <input type="text" id="name"
+                 class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                 placeholder="Your Name">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" id="email"
+                 class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                 placeholder="Your Email">
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+          <textarea id="message" rows="4"
+                    class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit"
+                class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
 </main>
 <footer></footer>
 <!-- Add your site or application content here -->
