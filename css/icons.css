@@ -30,6 +30,12 @@
   &.fa-shopping-cart::before {
     content: url(../img/icons/shopping-cart.svg);
   }
+  &.fa-selling::before {
+    content: url(../img/icons/tag.svg);
+  }
+  &.fa-renting::before {
+    content: url(../img/icons/document-currency-dollar.svg);
+  }
   &.fa-chat-bubble::before {
     content: url(../img/icons/chat-bubble.svg);
   }
