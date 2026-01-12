@@ -35,7 +35,7 @@ export const quickstart_menu = [
     title: "Compra", href: "/buying", icon: "shopping-cart"
   },
   {
-    title: "Realtors University", href: "/university", icon: "chat-bubble", featured: true
+    title: "Realtors University", href: "/university", icon: "realtors-university", featured: true
   },
   {
     title: "Plataformas", href: "/apps", icon: "chat-bubble"

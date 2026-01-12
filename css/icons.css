@@ -39,6 +39,9 @@
   &.fa-chat-bubble::before {
     content: url(../img/icons/chat-bubble.svg);
   }
+  &.fa-realtors-university::before {
+    content: url(../img/icons/realtors-university.svg);
+  }
   &.fa-bars::before {
     content: url(../img/icons/arrow-left-circle.svg);
   }
