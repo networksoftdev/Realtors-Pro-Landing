@@ -1,3 +1,5 @@
+@import url('./fonts.css');
+
 :root {
   --primary: #f0f0f0;
   --primary-overlay: rgba(24, 24, 24, 0.1);
@@ -12,6 +14,8 @@
   --primary-nav-faded-95: rgba(206, 206, 206, 0.95);
   --primary-nav-gradient: linear-gradient(0deg, var(--primary-nav-faded), var(--primary-nav-faded-95));
   --primary-link: #0e0e0e;
+  --primary-link-pro: #604e04;
+  --primary-text-pro: #3a3005;
   --primary-text: #222;
   --go-to-home-shadow: inset 0 -6px 21px -5px var(--primary-bg);
 
@@ -211,6 +215,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -295,7 +300,63 @@ textarea {
   }
 }
 
+header .logo-text {
+  text-align: center;
+
+  .logo-ico-text , .logo-title{
+    font-family: 'Cormorant SC', serif;
+  }
+
+  .logo-title{
+    font-size: large;
+    font-weight: 600;
+
+    span{
+      color: var(--primary-text-pro);
+    }
+    strong{
+      color: var(--primary-link-pro);
+    }
+  }
+
+  .logo-ico-text {
+    font-family: 'Cormorant SC', serif;
+    font-style: normal;
+    font-size: 3em;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    text-stroke: 2px black;
+
+    span {
+      font-family: 'Josefin Sans', sans-serif;
+      color: var(--primary-link-pro);
+      position: absolute;
+      margin-left: -2.1rem;
+      margin-top: 0.21rem;
+      transform: scale(0.8);
+      -webkit-text-stroke: 1.5px var(--primary-text-pro);
+      text-stroke: 1.5px var(--primary-text-pro);
+    }
+    margin-bottom:-2em;
+  }
+
+  &.ico-text .logo-title{
+      margin-top:-1em;
+  }
+
+  &.ico-logo .logo-ico-text{
+    display: none;
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    text-transform:uppercase;
+  }
+}
+
 @media (max-device-width: var(--potrait-width, 991px)) {}
+
 @media (max-device-width: 767px) and (min-height: 640px) {
   .smart-sticky {
     position: fixed;
@@ -397,7 +458,8 @@ textarea {
 }
 
 @media (min-device-width: var(--landscape-width, 992px)) {}
-@media (min-device-width: 768px) or (max-height: 639px){
+
+@media (min-device-width: 768px) or (max-height: 639px) {
   .smart-sticky {
     position: fixed;
     top: 0;
@@ -474,7 +536,8 @@ textarea {
     }
   }
 }
-@media (max-height: 520px){
+
+@media (max-height: 520px) {
   header ul.offcanvas-menu {
     top: 0;
   }
