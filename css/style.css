@@ -303,13 +303,12 @@ textarea {
 header .logo-text {
   text-align: center;
 
-  .logo-ico , .logo-title{
+  .logo-ico-text , .logo-title{
     font-family: 'Cormorant SC', serif;
   }
 
   .logo-title{
     font-size: large;
-    margin-top:-1em;
     font-weight: 600;
 
     span{
@@ -320,7 +319,7 @@ header .logo-text {
     }
   }
 
-  .logo-ico {
+  .logo-ico-text {
     font-family: 'Cormorant SC', serif;
     font-style: normal;
     font-size: 3em;
@@ -339,6 +338,14 @@ header .logo-text {
       text-stroke: 1.5px var(--primary-text-pro);
     }
     margin-bottom:-2em;
+  }
+
+  &.ico-text .logo-title{
+      margin-top:-1em;
+  }
+
+  &.ico-logo .logo-ico-text{
+    display: none;
   }
 
   p {
