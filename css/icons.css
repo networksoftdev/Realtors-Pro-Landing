@@ -47,6 +47,11 @@
 .icon-offcanvas-menu {
   display: none;
 }
+
+.logo-ico::before {
+  content: url(../favicon.svg);
+}
+
 @media (max-device-width: 991px) {
   .icon-mobile-offcanvas-menu {
     display: block;
