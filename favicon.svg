@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 352.72 408.1">
+  <defs>
+    <linearGradient id="Degradado_sin_nombre_747" data-name="Degradado sin nombre 747" x1="1.04" y1="203.75" x2="350.72" y2="203.75" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset=".12" stop-color="#020200"/>
+      <stop offset=".19" stop-color="#0b0900"/>
+      <stop offset=".26" stop-color="#1a1501"/>
+      <stop offset=".32" stop-color="#302702"/>
+      <stop offset=".38" stop-color="#4c3d03"/>
+      <stop offset=".41" stop-color="#604e04"/>
+      <stop offset=".45" stop-color="#554503"/>
+      <stop offset=".52" stop-color="#3a2f02"/>
+      <stop offset=".6" stop-color="#0d0b00"/>
+      <stop offset=".62" stop-color="#000"/>
+      <stop offset=".69" stop-color="#030300"/>
+      <stop offset=".75" stop-color="#0f0c00"/>
+      <stop offset=".81" stop-color="#221c01"/>
+      <stop offset=".87" stop-color="#3d3202"/>
+      <stop offset=".93" stop-color="#604e04"/>
+      <stop offset=".95" stop-color="#5b4a03"/>
+      <stop offset=".96" stop-color="#4d3f03"/>
+      <stop offset=".97" stop-color="#372c02"/>
+      <stop offset=".99" stop-color="#181301"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_773" data-name="Degradado sin nombre 773" x1="110.1" y1="264.21" x2="299.51" y2="74.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset=".22" stop-color="#020100"/>
+      <stop offset=".32" stop-color="#090800"/>
+      <stop offset=".41" stop-color="#171200"/>
+      <stop offset=".48" stop-color="#292101"/>
+      <stop offset=".54" stop-color="#413502"/>
+      <stop offset=".6" stop-color="#5f4d03"/>
+      <stop offset=".6" stop-color="#604e04"/>
+      <stop offset=".65" stop-color="#483b03"/>
+      <stop offset=".75" stop-color="#0d0b00"/>
+      <stop offset=".78" stop-color="#000"/>
+      <stop offset=".89" stop-color="#594904"/>
+      <stop offset=".91" stop-color="#524303"/>
+      <stop offset=".93" stop-color="#413502"/>
+      <stop offset=".96" stop-color="#251e01"/>
+      <stop offset=".99" stop-color="#000"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_495" data-name="Degradado sin nombre 495" x1="184.91" y1="212.69" x2="322.12" y2="349.89" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset=".12" stop-color="#382d02"/>
+      <stop offset=".21" stop-color="#604e04"/>
+      <stop offset=".23" stop-color="#584703"/>
+      <stop offset=".35" stop-color="#282101"/>
+      <stop offset=".44" stop-color="#0b0800"/>
+      <stop offset=".49" stop-color="#000"/>
+      <stop offset=".65" stop-color="#362c02"/>
+      <stop offset=".76" stop-color="#604e04"/>
+      <stop offset=".79" stop-color="#584704"/>
+      <stop offset=".92" stop-color="#423604"/>
+      <stop offset="1" stop-color="#3a3005"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_778" data-name="Degradado sin nombre 778" x1="175.72" y1="182.18" x2="175.72" y2="56.18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset=".16" stop-color="#382e04"/>
+      <stop offset=".17" stop-color="#3a3005"/>
+      <stop offset=".46" stop-color="#604e04"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_551" data-name="Degradado sin nombre 551" x1="169.37" y1="171.41" x2="169.37" y2="181.41" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3a3005"/>
+      <stop offset=".76" stop-color="#060500"/>
+      <stop offset="1" stop-color="#604e04"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_551-2" data-name="Degradado sin nombre 551" x1="181.47" x2="181.47" xlink:href="#Degradado_sin_nombre_551"/>
+    <linearGradient id="Degradado_sin_nombre_551-3" data-name="Degradado sin nombre 551" y1="183.41" y2="193.41" xlink:href="#Degradado_sin_nombre_551"/>
+    <linearGradient id="Degradado_sin_nombre_551-4" data-name="Degradado sin nombre 551" x1="181.47" y1="183.41" x2="181.47" y2="193.41" xlink:href="#Degradado_sin_nombre_551"/>
+  </defs>
+  <g id="Capa_9" data-name="Capa 9">
+    <g id="Propuesta_2026" data-name="Propuesta 2026">
+      <g id="icon">
+        <g id="hex3">
+          <polygon points="1.04 299.37 175.72 391.91 338.72 297.81 338.72 109.59 175.72 1.73 350.72 102.66 350.72 304.73 175.72 405.77 1.04 299.37" style="fill: url(#Degradado_sin_nombre_747);"/>
+          <g>
+            <polyline points="175.72 1.73 350.72 102.66 350.72 304.73 175.72 405.77 1.04 299.37" style="fill: none; stroke: #3a3005; stroke-miterlimit: 10; stroke-width: 4px;"/>
+            <polyline points="175.72 1.73 338.72 109.59 338.72 297.81 175.72 391.91 1.04 299.37" style="fill: none; stroke: #3a3005; stroke-miterlimit: 10; stroke-width: 4px;"/>
+          </g>
+        </g>
+        <g id="hex2">
+          <polygon points="175.72 39.73 310.71 125.77 310.72 281.63 175.72 354.19 298.71 274.7 298.71 132.7 175.72 51.73 42.85 113.41 175.72 39.73" style="fill: url(#Degradado_sin_nombre_773);"/>
+          <g>
+            <polyline points="42.85 113.41 175.72 39.73 310.71 125.77 310.72 281.63 175.72 354.19" style="fill: none; stroke: #3a3005; stroke-miterlimit: 10; stroke-width: 3px;"/>
+            <polyline points="42.85 113.41 175.72 51.73 298.71 132.7 298.71 274.7 175.72 354.19" style="fill: none; stroke: #3a3005; stroke-miterlimit: 10; stroke-width: 3px;"/>
+          </g>
+        </g>
+        <g id="hex1">
+          <polygon points="175.88 312.11 76.68 253.96 175.87 301.08 259.66 253.12 259.66 153.49 175.88 90.3 270.71 148.98 270.71 258.31 175.88 312.11" style="fill: url(#Degradado_sin_nombre_495);"/>
+          <g>
+            <polyline points="175.88 90.3 270.71 148.98 270.71 258.31 175.88 312.11 76.68 253.96" style="fill: none; stroke: #3a3005; stroke-miterlimit: 10; stroke-width: 2px;"/>
+            <polyline points="175.88 90.3 259.66 153.49 259.66 253.12 175.87 301.08 76.68 253.96" style="fill: none; stroke: #3a3005; stroke-miterlimit: 10; stroke-width: 2px;"/>
+          </g>
+        </g>
+        <g id="house">
+          <polygon points="112.72 167.04 175.71 127.73 238.72 167.41 232.76 236.62 226.72 174 175.72 139.73 124.72 174 118.06 236.62 112.72 167.04" style="fill: url(#Degradado_sin_nombre_778);"/>
+          <g>
+            <polyline points="118.06 236.62 112.72 167.04 175.71 127.73 238.72 167.41 232.76 236.62" style="fill: none; stroke: #604e04; stroke-miterlimit: 10; stroke-width: 2px;"/>
+            <polyline points="118.06 236.62 124.72 174 175.72 139.73 226.72 174 232.76 236.62" style="fill: none; stroke: #604e04; stroke-miterlimit: 10; stroke-width: 2px;"/>
+          </g>
+        </g>
+        <g id="window">
+          <rect x="164.37" y="171.41" width="10" height="10" style="fill: url(#Degradado_sin_nombre_551); stroke: #604e04; stroke-miterlimit: 10;"/>
+          <rect x="176.47" y="171.41" width="10" height="10" style="fill: url(#Degradado_sin_nombre_551-2); stroke: #604e04; stroke-miterlimit: 10;"/>
+          <rect x="164.37" y="183.41" width="10" height="10" style="fill: url(#Degradado_sin_nombre_551-3); stroke: #604e04; stroke-miterlimit: 10;"/>
+          <rect x="176.47" y="183.41" width="10" height="10" style="fill: url(#Degradado_sin_nombre_551-4); stroke: #604e04; stroke-miterlimit: 10;"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
