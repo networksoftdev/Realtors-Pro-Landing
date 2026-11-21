@@ -1,27 +1,46 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="es-MX">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Realtor's Pro | Plataforma inmobiliaria digital</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/icons.css">
-  <meta name="description" content="">
+  <meta name="description" content="Construye patrimonio y genera ingresos con Realtor's Pro. Encuentra y gestiona inversiones inmobiliarias en México con asesoría experta y procesos 100% en línea.">
+  <meta name="application-name" content="Realtors Pro">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f0f0f">
+  <meta name="color-scheme" content="dark light">
+  <link rel="canonical" href="https://preview.realtorspro.com.mx/">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Realtors Pro">
+  <meta property="og:title" content="Realtor's Pro | Plataforma inmobiliaria digital">
+  <meta property="og:description" content="Construye patrimonio y genera ingresos con Realtor's Pro. Encuentra y gestiona inversiones inmobiliarias en México con asesoría experta y procesos 100% en línea.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://preview.realtorspro.com.mx/">
+  <meta property="og:image" content="https://preview.realtorspro.com.mx/icon.png">
+  <meta property="og:image:secure_url" content="https://preview.realtorspro.com.mx/icon.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="2048">
+  <meta property="og:image:height" content="2350">
+  <meta property="og:image:alt" content="Emblema de Realtor's Pro">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Realtor's Pro | Plataforma inmobiliaria digital">
+  <meta name="twitter:description" content="Construye patrimonio y genera ingresos con Realtor's Pro. Encuentra y gestiona inversiones inmobiliarias en México con asesoría experta y procesos 100% en línea.">
+  <meta name="twitter:image" content="https://preview.realtorspro.com.mx/icon.png">
+  <meta name="twitter:image:alt" content="Emblema de Realtor's Pro">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Realtors Pro">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 
 <body class="bg-primary text-white group">
@@ -269,6 +288,14 @@
 <footer></footer>
 <!-- Add your site or application content here -->
 <script src="js/app.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+        .catch((error) => console.error('Service worker registration failed:', error));
+    });
+  }
+</script>
 </body>
 
 </html>

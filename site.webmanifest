@@ -1,12 +1,35 @@
 {
-  "short_name": "Realtors Pro Tmpl",
-  "name": "Realtors Pro Template",
-  "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  }],
+  "id": "/",
+  "short_name": "Realtors Pro",
+  "name": "Realtor's Pro",
+  "description": "Plataforma inmobiliaria digital para construir patrimonio y generar ingresos en México.",
+  "lang": "es-MX",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "pwa-icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "2048x2350",
+      "purpose": "any"
+    },
+    {
+      "src": "icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    }
+  ],
   "start_url": "/?utm_source=homescreen",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
   "background_color": "#0f0f0f",
-  "theme_color": "#fafafa"
+  "theme_color": "#0f0f0f",
+  "categories": ["business", "finance", "lifestyle"]
 }
