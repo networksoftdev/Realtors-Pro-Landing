@@ -63,6 +63,11 @@ module.exports = {
       '6xl': '5120px', // 1280px
     }
   },
-  plugins: [],
+  plugins: [
+    // `done:` — styles applied while a toggle has the `.done` class (e.g. hide the hamburger while the sidebar is open)
+    function ({addVariant}) {
+      addVariant('done', '&.done')
+    },
+  ],
 }
 
