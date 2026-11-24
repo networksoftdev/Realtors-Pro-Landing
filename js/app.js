@@ -23,6 +23,7 @@ function menu_render({selectors = MENU_SELECTORS, post_render = undefined}) {
 const MAIN_MENU_SELECTOR = "header [data-menu]";
 const SIDEBAR_SELECTOR = ".sidebar-offcanvas-area";
 const SIDEBAR_ACTIVE_CLASS = "active-offcanvas";
+let sidebarIsOpen = false
 
 function resolveToggleTarget(toggle) {
   if (toggle.dataset.toggleMenu) return document.querySelector(toggle.dataset.toggleMenu)
@@ -45,7 +46,8 @@ function toggleMenuListener(toggle_click_evt) {
   const dataToggleClass = toggle.dataset.toggleClass ?? 'active'
   console.debug('toggle:', menu, dataToggle, dataToggleClass)
   if (dataToggleClass === SIDEBAR_ACTIVE_CLASS) {
-    menu.classList.contains(SIDEBAR_ACTIVE_CLASS) ? closeSidebar() : openSidebar()
+    const isOpen = menu.classList.contains(SIDEBAR_ACTIVE_CLASS) || sidebarIsOpen
+    isOpen ? closeSidebar() : openSidebar()
     return
   }
   toggle.classList.toggle(dataToggle)
@@ -85,7 +87,8 @@ function sidebarToggles() {
 function setSidebarState(open) {
   const sidebar = document.querySelector(SIDEBAR_SELECTOR)
   if (!sidebar) return
-  const changed = sidebar.classList.contains(SIDEBAR_ACTIVE_CLASS) !== open
+  const changed = sidebarIsOpen !== open
+  sidebarIsOpen = open
   sidebar.classList.toggle(SIDEBAR_ACTIVE_CLASS, open)
   sidebar.setAttribute('aria-hidden', (!open).toString())
   sidebar.inert = !open
@@ -99,11 +102,6 @@ function setSidebarState(open) {
     return
   }
   console.debug('setSidebarState():', open)
-  if (open) {
-    sidebar.querySelector('.offcanvas-close')?.focus()
-  } else {
-    sidebarToggles()[0]?.focus()
-  }
 }
 
 function openSidebar() {
@@ -187,7 +185,8 @@ function domContentLoadedListener(dom_evt) {
   menu_render({
     post_render: render_sidebar_menu
   })
-  toggle_menu()
+  // toggle_menu()
+  setSidebarState(false)
 }
 
 function addTrackedEvent({element = document, event = 'DOMContentLoaded', listener = domContentLoadedListener}) {
