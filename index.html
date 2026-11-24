@@ -11,7 +11,7 @@
   <meta name="description" content="Construye patrimonio y genera ingresos con Realtor's Pro. Encuentra y gestiona inversiones inmobiliarias en México con asesoría experta y procesos 100% en línea.">
   <meta name="application-name" content="Realtors Pro">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#0f0f0f">
+  <meta name="theme-color" content="#050505">
   <meta name="color-scheme" content="dark light">
   <link rel="canonical" href="https://realtors-pro.com/">
 
@@ -43,7 +43,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 
-<body class="bg-primary text-white group">
+<body class="bg-ink-950 text-gold-50 font-sans antialiased selection:bg-gold-400 selection:text-ink-950 group">
 <header class="">
   <div aria-hidden="true" class="pre-sticky h-auto onSticky:h-0 hidden"></div>
   <div class="header-is-sticky smart-sticky ease-in-out transform-none hidden onSticky:translate-y-[-20px]">
@@ -57,7 +57,7 @@
           <div class="logo-img hidden">
             <a href="/">
               <img src="img/logo.svg" alt="Realtors Pro"
-                   class="drop-shadow-[0.5px_0.5px_0.5px_rgba(255,255,255,0.4)] h-11">
+                   class="drop-shadow-[0.5px_0.5px_0.5px_rgba(212,175,55,0.5)] h-11">
             </a>
           </div>
           <div class="logo-text ico-logo">
@@ -86,206 +86,395 @@
     </div>
   </div>
 </header>
+
 <main class="group-has-[.smart-sticky_.logo-header-left]:mt-24 group-has-[.smart-sticky_.logo-header-left]:mb-[10em] md:group-has-[.smart-sticky_.logo-header-left]:mb-0">
+
   <!-- Hero -->
-  <section class="relative overflow-hidden bg-gradient-to-b from-black/80 via-black/70 to-black/80 text-white">
-    <div class="absolute inset-0 bg-[url('img/hero.jpg')] bg-cover bg-center opacity-40"></div>
-    <div class="container mx-auto px-6 py-20 relative z-10 grid lg:grid-cols-2 gap-10 items-center">
-      <div class="space-y-6">
-        <p class="text-sm tracking-[0.25em] uppercase text-amber-400">Plataforma inmobiliaria digital</p>
-        <h1 class="text-4xl sm:text-5xl font-bold leading-tight">Construye patrimonio y genera ingresos con Realtor's Pro</h1>
-        <p class="text-lg text-gray-200 max-w-2xl">Transformamos la experiencia inmobiliaria tradicional en un proceso claro, inteligente y orientado a resultados financieros reales, 100% en línea.</p>
-        <div class="flex flex-wrap gap-3">
-          <a href="#valor" class="bg-amber-400 text-black px-5 py-3 font-semibold uppercase tracking-wide rounded shadow hover:-translate-y-0.5 hover:shadow-lg transition">Ver propuesta de valor</a>
-          <a href="#contacto" class="border border-amber-400 text-amber-300 px-5 py-3 font-semibold uppercase tracking-wide rounded hover:bg-amber-400 hover:text-black transition">Hablar con un especialista</a>
+  <section class="relative isolate overflow-hidden bg-black-gold">
+    <div aria-hidden="true" class="absolute inset-0 -z-10 bg-gold-radial"></div>
+    <div aria-hidden="true" class="absolute -top-40 right-[-10%] -z-10 h-[32rem] w-[32rem] rounded-full bg-gold-500/10 blur-3xl"></div>
+    <div class="container mx-auto px-6 pt-20 pb-24 lg:pt-28 lg:pb-32 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-8">
+        <p class="inline-flex items-center gap-3 font-accent text-xs tracking-[0.35em] uppercase text-gold-300">
+          <span class="h-px w-10 bg-gold-400"></span>
+          Plataforma inmobiliaria digital
+        </p>
+        <h2 class="font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.05] text-gold-50">
+          Construye patrimonio y genera ingresos con
+          <span class="bg-gold-gradient bg-clip-text text-transparent">Realtor's Pro</span>
+        </h2>
+        <p class="text-lg text-gold-100/70 max-w-2xl leading-relaxed">
+          Transformamos la experiencia inmobiliaria tradicional en un proceso claro, inteligente y orientado a
+          resultados financieros reales, 100% en línea.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#propiedades"
+             class="bg-gold-gradient text-ink-950 px-7 py-3.5 font-semibold uppercase tracking-wider text-sm rounded-sm shadow-gold hover:-translate-y-0.5 hover:brightness-110 transition">
+            Explorar propiedades
+          </a>
+          <a href="#contacto"
+             class="border border-gold-400/70 text-gold-200 px-7 py-3.5 font-semibold uppercase tracking-wider text-sm rounded-sm hover:bg-gold-400 hover:text-ink-950 transition">
+            Hablar con un especialista
+          </a>
         </div>
       </div>
-      <div class="bg-white/5 border border-white/10 rounded-xl p-6 backdrop-blur">
-        <div class="grid grid-cols-2 gap-4 text-center">
-          <div class="p-4 bg-black/30 rounded">
-            <p class="text-3xl font-bold text-amber-300">10</p>
-            <p class="text-sm text-gray-300">Playas top en México</p>
+
+      <!-- Buscador -->
+      <form class="lg:col-span-5 bg-ink-800/80 border border-gold-400/20 rounded-lg p-6 sm:p-8 backdrop-blur shadow-gold space-y-5"
+            action="#propiedades">
+        <p class="font-display text-2xl text-gold-200">Encuentra tu próximo inmueble</p>
+        <div class="grid grid-cols-3 gap-1 p-1 bg-ink-950 rounded-sm border border-gold-400/10 text-xs uppercase tracking-wider">
+          <label class="cursor-pointer">
+            <input type="radio" name="operacion" value="compra" class="peer sr-only" checked>
+            <span class="block text-center py-2 rounded-sm text-gold-100/60 peer-checked:bg-gold-400 peer-checked:text-ink-950 transition">Compra</span>
+          </label>
+          <label class="cursor-pointer">
+            <input type="radio" name="operacion" value="renta" class="peer sr-only">
+            <span class="block text-center py-2 rounded-sm text-gold-100/60 peer-checked:bg-gold-400 peer-checked:text-ink-950 transition">Renta</span>
+          </label>
+          <label class="cursor-pointer">
+            <input type="radio" name="operacion" value="inversion" class="peer sr-only">
+            <span class="block text-center py-2 rounded-sm text-gold-100/60 peer-checked:bg-gold-400 peer-checked:text-ink-950 transition">Inversión</span>
+          </label>
+        </div>
+        <div>
+          <label for="ubicacion" class="block text-xs uppercase tracking-wider text-gold-300 mb-1">Ubicación</label>
+          <select id="ubicacion" name="ubicacion"
+                  class="w-full px-3 py-2.5 rounded-sm bg-ink-950 border border-gold-400/20 text-gold-50 focus:border-gold-400 focus:outline-none">
+            <option>Todas las playas</option>
+            <option>Cancún</option>
+            <option>Playa del Carmen</option>
+            <option>Tulum</option>
+            <option>Los Cabos</option>
+            <option>Puerto Vallarta</option>
+            <option>Riviera Nayarit</option>
+            <option>Mazatlán</option>
+            <option>Acapulco</option>
+            <option>Huatulco</option>
+            <option>Puerto Escondido</option>
+          </select>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label for="tipo" class="block text-xs uppercase tracking-wider text-gold-300 mb-1">Tipo</label>
+            <select id="tipo" name="tipo"
+                    class="w-full px-3 py-2.5 rounded-sm bg-ink-950 border border-gold-400/20 text-gold-50 focus:border-gold-400 focus:outline-none">
+              <option>Residencial</option>
+              <option>Comercial</option>
+              <option>Industrial</option>
+            </select>
           </div>
-          <div class="p-4 bg-black/30 rounded">
-            <p class="text-3xl font-bold text-amber-300">100%</p>
-            <p class="text-sm text-gray-300">Operación en línea</p>
-          </div>
-          <div class="p-4 bg-black/30 rounded">
-            <p class="text-3xl font-bold text-amber-300">+Catálogo</p>
-            <p class="text-sm text-gray-300">Residencial, comercial e industrial</p>
-          </div>
-          <div class="p-4 bg-black/30 rounded">
-            <p class="text-3xl font-bold text-amber-300">Seguridad</p>
-            <p class="text-sm text-gray-300">Procesos con respaldo integral</p>
+          <div>
+            <label for="presupuesto" class="block text-xs uppercase tracking-wider text-gold-300 mb-1">Presupuesto</label>
+            <select id="presupuesto" name="presupuesto"
+                    class="w-full px-3 py-2.5 rounded-sm bg-ink-950 border border-gold-400/20 text-gold-50 focus:border-gold-400 focus:outline-none">
+              <option>Cualquiera</option>
+              <option>Hasta $3M MXN</option>
+              <option>$3M – $8M MXN</option>
+              <option>$8M – $15M MXN</option>
+              <option>+$15M MXN</option>
+            </select>
           </div>
         </div>
+        <button type="submit"
+                class="w-full bg-gold-gradient text-ink-950 font-semibold uppercase tracking-wider text-sm py-3.5 rounded-sm hover:brightness-110 transition">
+          Buscar propiedades
+        </button>
+      </form>
+    </div>
+
+    <!-- Stats -->
+    <div class="border-y border-gold-400/15 bg-ink-950/60">
+      <dl class="container mx-auto px-6 py-8 grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+        <div class="flex flex-col-reverse gap-1">
+          <dt class="text-xs uppercase tracking-[0.25em] text-gold-100/50">Playas top en México</dt>
+          <dd class="font-display text-4xl text-gold-300">10</dd>
+        </div>
+        <div class="flex flex-col-reverse gap-1">
+          <dt class="text-xs uppercase tracking-[0.25em] text-gold-100/50">Operación en línea</dt>
+          <dd class="font-display text-4xl text-gold-300">100%</dd>
+        </div>
+        <div class="flex flex-col-reverse gap-1">
+          <dt class="text-xs uppercase tracking-[0.25em] text-gold-100/50">Patrimonio en</dt>
+          <dd class="font-display text-4xl text-gold-300">2 – 5 años</dd>
+        </div>
+        <div class="flex flex-col-reverse gap-1">
+          <dt class="text-xs uppercase tracking-[0.25em] text-gold-100/50">Comisiones ocultas</dt>
+          <dd class="font-display text-4xl text-gold-300">0</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Propiedades destacadas -->
+  <section id="propiedades" class="bg-ink-900">
+    <div class="container mx-auto px-6 py-20 space-y-12">
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+        <div class="space-y-3">
+          <p class="font-accent text-xs tracking-[0.35em] uppercase text-gold-400">Propiedades destacadas</p>
+          <h2 class="font-display text-4xl sm:text-5xl text-gold-50">Inventario curado para invertir</h2>
+        </div>
+        <a href="/buying" class="text-sm uppercase tracking-wider text-gold-300 hover:text-gold-100 transition">
+          Ver catálogo completo &rarr;
+        </a>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <article class="group/card bg-ink-800 border border-gold-400/10 rounded-lg overflow-hidden hover:border-gold-400/50 hover:shadow-gold transition">
+          <div class="relative h-56 bg-gradient-to-br from-gold-900 via-ink-700 to-ink-950">
+            <span class="absolute top-4 left-4 bg-gold-400 text-ink-950 text-[0.65rem] font-semibold uppercase tracking-wider px-3 py-1 rounded-sm">Preventa</span>
+            <span class="absolute bottom-4 right-4 font-display text-2xl text-gold-200">$6.9M MXN</span>
+          </div>
+          <div class="p-6 space-y-3">
+            <p class="text-xs uppercase tracking-wider text-gold-400">Tulum · Residencial</p>
+            <h3 class="font-display text-2xl text-gold-50 group-hover/card:text-gold-300 transition">Penthouse frente a la selva</h3>
+            <ul class="flex gap-5 text-sm text-gold-100/60 pt-2 border-t border-gold-400/10">
+              <li>3 rec.</li>
+              <li>3 baños</li>
+              <li>185 m²</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="group/card bg-ink-800 border border-gold-400/10 rounded-lg overflow-hidden hover:border-gold-400/50 hover:shadow-gold transition">
+          <div class="relative h-56 bg-gradient-to-br from-ink-600 via-gold-800 to-ink-950">
+            <span class="absolute top-4 left-4 bg-ink-950/80 border border-gold-400/50 text-gold-200 text-[0.65rem] font-semibold uppercase tracking-wider px-3 py-1 rounded-sm">Renta vacacional</span>
+            <span class="absolute bottom-4 right-4 font-display text-2xl text-gold-200">$12.4M MXN</span>
+          </div>
+          <div class="p-6 space-y-3">
+            <p class="text-xs uppercase tracking-wider text-gold-400">Los Cabos · Residencial</p>
+            <h3 class="font-display text-2xl text-gold-50 group-hover/card:text-gold-300 transition">Villa con vista al Mar de Cortés</h3>
+            <ul class="flex gap-5 text-sm text-gold-100/60 pt-2 border-t border-gold-400/10">
+              <li>4 rec.</li>
+              <li>5 baños</li>
+              <li>320 m²</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="group/card bg-ink-800 border border-gold-400/10 rounded-lg overflow-hidden hover:border-gold-400/50 hover:shadow-gold transition">
+          <div class="relative h-56 bg-gradient-to-br from-gold-950 via-ink-800 to-gold-700">
+            <span class="absolute top-4 left-4 bg-gold-400 text-ink-950 text-[0.65rem] font-semibold uppercase tracking-wider px-3 py-1 rounded-sm">Alta plusvalía</span>
+            <span class="absolute bottom-4 right-4 font-display text-2xl text-gold-200">$18.7M MXN</span>
+          </div>
+          <div class="p-6 space-y-3">
+            <p class="text-xs uppercase tracking-wider text-gold-400">Cancún · Comercial</p>
+            <h3 class="font-display text-2xl text-gold-50 group-hover/card:text-gold-300 transition">Local comercial en zona hotelera</h3>
+            <ul class="flex gap-5 text-sm text-gold-100/60 pt-2 border-t border-gold-400/10">
+              <li>Planta baja</li>
+              <li>2 baños</li>
+              <li>240 m²</li>
+            </ul>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- Quiénes somos -->
-  <section class="bg-white text-black">
-    <div class="container mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="space-y-4">
-        <p class="text-xs tracking-[0.3em] uppercase text-amber-600">Quiénes somos</p>
-        <h2 class="text-3xl font-bold">Plataforma inmobiliaria digital de alto nivel</h2>
-        <p class="text-lg text-gray-700">REALTOR’S PRO es una plataforma digital que ayuda a personas e inversionistas a construir patrimonio y generar ingresos a través de bienes raíces de forma eficiente, segura y 100% en línea.</p>
-        <p class="text-lg text-gray-700">Operamos en las 10 playas más importantes de México, integrando inventario residencial, comercial e industrial para clientes nacionales y extranjeros.</p>
+  <section class="bg-ink-950">
+    <div class="container mx-auto px-6 py-20 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="space-y-5">
+        <p class="font-accent text-xs tracking-[0.35em] uppercase text-gold-400">Quiénes somos</p>
+        <h2 class="font-display text-4xl sm:text-5xl text-gold-50">Plataforma inmobiliaria digital de alto nivel</h2>
+        <p class="text-lg text-gold-100/70 leading-relaxed">REALTOR’S PRO es una plataforma digital que ayuda a personas e
+          inversionistas a construir patrimonio y generar ingresos a través de bienes raíces de forma eficiente, segura y
+          100% en línea.</p>
+        <p class="text-lg text-gold-100/70 leading-relaxed">Operamos en las 10 playas más importantes de México, integrando
+          inventario residencial, comercial e industrial para clientes nacionales y extranjeros.</p>
       </div>
-      <div class="bg-gray-50 border border-gray-100 rounded-xl p-8 shadow-sm">
-        <div class="space-y-4">
-          <div class="flex items-start gap-3">
-            <span class="w-10 h-10 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-semibold">M</span>
-            <div>
-              <h3 class="text-xl font-semibold">Misión</h3>
-              <p class="text-gray-700">Acompañar a nuestros clientes en la construcción de un patrimonio inmobiliario rentable, que les permita vivir de sus rentas con seguridad y visión de largo plazo.</p>
+      <div class="relative">
+        <div aria-hidden="true" class="absolute -inset-px rounded-lg bg-gold-gradient opacity-40"></div>
+        <div class="relative bg-ink-800 rounded-lg p-8 sm:p-10 space-y-8">
+          <div class="flex items-start gap-5">
+            <span class="shrink-0 w-12 h-12 rounded-full border border-gold-400 text-gold-300 flex items-center justify-center font-display text-xl">M</span>
+            <div class="space-y-1">
+              <h3 class="font-display text-2xl text-gold-200">Misión</h3>
+              <p class="text-gold-100/70">Acompañar a nuestros clientes en la construcción de un patrimonio inmobiliario
+                rentable, que les permita vivir de sus rentas con seguridad y visión de largo plazo.</p>
             </div>
           </div>
-          <div class="flex items-start gap-3">
-            <span class="w-10 h-10 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-semibold">V</span>
-            <div>
-              <h3 class="text-xl font-semibold">Visión</h3>
-              <p class="text-gray-700">Ser la marca líder mundial de dropshipping inmobiliario digital y referente en ventas y tecnología inmobiliaria en países de habla hispana.</p>
+          <div class="h-px bg-gradient-to-r from-transparent via-gold-400/40 to-transparent"></div>
+          <div class="flex items-start gap-5">
+            <span class="shrink-0 w-12 h-12 rounded-full border border-gold-400 text-gold-300 flex items-center justify-center font-display text-xl">V</span>
+            <div class="space-y-1">
+              <h3 class="font-display text-2xl text-gold-200">Visión</h3>
+              <p class="text-gold-100/70">Ser la marca líder mundial de dropshipping inmobiliario digital y referente en
+                ventas y tecnología inmobiliaria en países de habla hispana.</p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Valores -->
-  <section class="bg-black text-white">
-    <div class="container mx-auto px-6 py-16">
-      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-10">
-        <div>
-          <p class="text-xs tracking-[0.3em] uppercase text-amber-400">Valores</p>
-          <h2 class="text-3xl font-bold">Lo que guía cada decisión</h2>
-        </div>
-        <p class="max-w-2xl text-gray-300">Construimos relaciones de confianza con innovación, seguridad y transparencia en todas las etapas de compra, venta o renta de inmuebles.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div class="p-5 border border-white/10 bg-white/5 rounded-lg">Innovación</div>
-        <div class="p-5 border border-white/10 bg-white/5 rounded-lg">Seguridad</div>
-        <div class="p-5 border border-white/10 bg-white/5 rounded-lg">Protección</div>
-        <div class="p-5 border border-white/10 bg-white/5 rounded-lg">Privacidad</div>
-        <div class="p-5 border border-white/10 bg-white/5 rounded-lg">Confianza</div>
-        <div class="p-5 border border-white/10 bg-white/5 rounded-lg">Integridad</div>
-        <div class="p-5 border border-white/10 bg-white/5 rounded-lg">Transparencia</div>
-        <div class="p-5 border border-white/10 bg-white/5 rounded-lg">Cumplimiento</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Operación & Respaldo -->
-  <section class="bg-white text-black">
-    <div class="container mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-start">
-      <div class="space-y-6">
-        <p class="text-xs tracking-[0.3em] uppercase text-amber-600">Operación</p>
-        <h2 class="text-3xl font-bold">Procesos digitales centralizados</h2>
-        <p class="text-gray-700">Plataformas propias que centralizan información, análisis, procesos y cierre de operaciones en un entorno seguro y eficiente.</p>
-        <div class="bg-gray-50 border border-gray-100 rounded-lg p-6 shadow-sm">
-          <h3 class="text-xl font-semibold mb-3">Protección y confianza</h3>
-          <p class="text-gray-700">Garantizamos protección, seguridad, privacidad y confianza en cada etapa de la intermediación, negociación y cierre de operaciones inmobiliarias.</p>
-        </div>
-      </div>
-      <div class="space-y-6">
-        <p class="text-xs tracking-[0.3em] uppercase text-amber-600">Respaldo integral</p>
-        <h2 class="text-3xl font-bold">Acompañamiento experto</h2>
-        <div class="grid sm:grid-cols-2 gap-4">
-          <div class="p-5 border border-gray-200 rounded-lg shadow-sm bg-white">Jurídico</div>
-          <div class="p-5 border border-gray-200 rounded-lg shadow-sm bg-white">Fiscal</div>
-          <div class="p-5 border border-gray-200 rounded-lg shadow-sm bg-white">Hipotecario</div>
-          <div class="p-5 border border-gray-200 rounded-lg shadow-sm bg-white">Financiero</div>
-          <div class="p-5 border border-gray-200 rounded-lg shadow-sm bg-white">Notarial</div>
-          <div class="p-5 border border-gray-200 rounded-lg shadow-sm bg-white">Compra, venta y renta</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tecnología con IA -->
-  <section class="bg-black text-white">
-    <div class="container mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="space-y-4">
-        <p class="text-xs tracking-[0.3em] uppercase text-amber-400">Tecnología con IA</p>
-        <h2 class="text-3xl font-bold">Inteligencia inmobiliaria para decisiones seguras</h2>
-        <p class="text-gray-300">Usamos tecnología avanzada para que compres mejor, reduzcas riesgos, generes ingresos y reinviertas estratégicamente, construyendo patrimonio en 2 a 5 años.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 gap-4">
-        <div class="p-5 border border-white/10 bg-white/5 rounded-lg">Comprar mejor</div>
-        <div class="p-5 border border-white/10 bg-white/5 rounded-lg">Reducir riesgos</div>
-        <div class="p-5 border border-white/10 bg-white/5 rounded-lg">Generar ingresos</div>
-        <div class="p-5 border border-white/10 bg-white/5 rounded-lg">Reinvertir estratégicamente</div>
-        <div class="p-5 border border-white/10 bg-white/5 rounded-lg">Construir patrimonio</div>
-        <div class="p-5 border border-white/10 bg-white/5 rounded-lg">Jubilación anticipada basada en rentas</div>
       </div>
     </div>
   </section>
 
   <!-- Propuesta de valor -->
-  <section id="valor" class="bg-white text-black">
-    <div class="container mx-auto px-6 py-16 space-y-10">
-      <div class="space-y-3">
-        <p class="text-xs tracking-[0.3em] uppercase text-amber-600">Nuestra propuesta de valor</p>
-        <h2 class="text-3xl font-bold">Cómo ayudamos a nuestros clientes</h2>
-        <p class="text-gray-700 max-w-3xl">Experiencia de compra y gestión 100% digital, con acompañamiento especializado solo cuando lo necesitas.</p>
+  <section id="valor" class="bg-ink-900">
+    <div class="container mx-auto px-6 py-20 space-y-12">
+      <div class="space-y-3 max-w-3xl">
+        <p class="font-accent text-xs tracking-[0.35em] uppercase text-gold-400">Nuestra propuesta de valor</p>
+        <h2 class="font-display text-4xl sm:text-5xl text-gold-50">Cómo ayudamos a nuestros clientes</h2>
+        <p class="text-gold-100/70">Experiencia de compra y gestión 100% digital, con acompañamiento especializado solo
+          cuando lo necesitas.</p>
       </div>
-      <div class="grid lg:grid-cols-3 gap-6">
-        <article class="p-6 rounded-xl border border-gray-200 shadow-sm bg-white space-y-3">
-          <h3 class="text-xl font-semibold">1. Generar dinero y patrimonio</h3>
-          <p class="text-gray-700">Adquisición estratégica de activos inmobiliarios con enfoque patrimonial y de rentas para construir riqueza real y sostenible.</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-gold-400/15 border border-gold-400/15 rounded-lg overflow-hidden">
+        <article class="bg-ink-900 p-8 space-y-3 hover:bg-ink-800 transition">
+          <p class="font-display text-4xl text-gold-400/60">01</p>
+          <h3 class="font-display text-2xl text-gold-100">Generar dinero y patrimonio</h3>
+          <p class="text-gold-100/60">Adquisición estratégica de activos inmobiliarios con enfoque patrimonial y de rentas
+            para construir riqueza real y sostenible.</p>
         </article>
-        <article class="p-6 rounded-xl border border-gray-200 shadow-sm bg-white space-y-3">
-          <h3 class="text-xl font-semibold">2. Comprar con comodidad total</h3>
-          <p class="text-gray-700">Toda la búsqueda, análisis y compra se realiza en línea. Gestionamos digitalmente el crédito hipotecario bancario, simplificando trámites y tiempos.</p>
+        <article class="bg-ink-900 p-8 space-y-3 hover:bg-ink-800 transition">
+          <p class="font-display text-4xl text-gold-400/60">02</p>
+          <h3 class="font-display text-2xl text-gold-100">Comprar con comodidad total</h3>
+          <p class="text-gold-100/60">Toda la búsqueda, análisis y compra se realiza en línea. Gestionamos digitalmente el
+            crédito hipotecario bancario, simplificando trámites y tiempos.</p>
         </article>
-        <article class="p-6 rounded-xl border border-gray-200 shadow-sm bg-white space-y-3">
-          <h3 class="text-xl font-semibold">3. Atención cuando se requiere</h3>
-          <p class="text-gray-700">Especialistas a pedido para estrategia de compra, estructura fiscal, impuestos y procesos notariales.</p>
+        <article class="bg-ink-900 p-8 space-y-3 hover:bg-ink-800 transition">
+          <p class="font-display text-4xl text-gold-400/60">03</p>
+          <h3 class="font-display text-2xl text-gold-100">Atención cuando se requiere</h3>
+          <p class="text-gold-100/60">Especialistas a pedido para estrategia de compra, estructura fiscal, impuestos y
+            procesos notariales.</p>
         </article>
-        <article class="p-6 rounded-xl border border-gray-200 shadow-sm bg-white space-y-3">
-          <h3 class="text-xl font-semibold">4. Ahorrar tiempo con información completa</h3>
-          <p class="text-gray-700">Catálogo completo de inventario nuevo: residencial, comercial e industrial en un solo lugar.</p>
+        <article class="bg-ink-900 p-8 space-y-3 hover:bg-ink-800 transition">
+          <p class="font-display text-4xl text-gold-400/60">04</p>
+          <h3 class="font-display text-2xl text-gold-100">Ahorrar tiempo con información completa</h3>
+          <p class="text-gold-100/60">Catálogo completo de inventario nuevo: residencial, comercial e industrial en un solo
+            lugar.</p>
         </article>
-        <article class="p-6 rounded-xl border border-gray-200 shadow-sm bg-white space-y-3">
-          <h3 class="text-xl font-semibold">5. Operar sin riesgos</h3>
-          <p class="text-gray-700">Sin brokers improvisados ni comisiones ocultas. Operaciones transparentes y sin conflictos de interés.</p>
+        <article class="bg-ink-900 p-8 space-y-3 hover:bg-ink-800 transition">
+          <p class="font-display text-4xl text-gold-400/60">05</p>
+          <h3 class="font-display text-2xl text-gold-100">Operar sin riesgos</h3>
+          <p class="text-gold-100/60">Sin brokers improvisados ni comisiones ocultas. Operaciones transparentes y sin
+            conflictos de interés.</p>
         </article>
-        <article class="p-6 rounded-xl border border-gray-200 shadow-sm bg-white space-y-3">
-          <h3 class="text-xl font-semibold">6. Proteger datos e identidad</h3>
-          <p class="text-gray-700">Procesos con altos estándares de protección de datos y privacidad para evitar fraude o suplantación.</p>
+        <article class="bg-ink-900 p-8 space-y-3 hover:bg-ink-800 transition">
+          <p class="font-display text-4xl text-gold-400/60">06</p>
+          <h3 class="font-display text-2xl text-gold-100">Proteger datos e identidad</h3>
+          <p class="text-gold-100/60">Procesos con altos estándares de protección de datos y privacidad para evitar fraude
+            o suplantación.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- CTA final -->
-  <section id="contacto" class="bg-black text-white">
-    <div class="container mx-auto px-6 py-16 grid lg:grid-cols-2 gap-10 items-center">
-      <div class="space-y-4">
-        <p class="text-xs tracking-[0.3em] uppercase text-amber-400">Listo para empezar</p>
-        <h2 class="text-3xl font-bold">Hablemos de tu próximo inmueble</h2>
-        <p class="text-gray-300">Completa tu perfil y recibe opciones curadas, análisis financiero y acompañamiento especializado solo cuando lo necesites.</p>
+  <!-- Respaldo integral + Tecnología -->
+  <section class="bg-ink-950">
+    <div class="container mx-auto px-6 py-20 grid lg:grid-cols-2 gap-14">
+      <div class="space-y-6">
+        <p class="font-accent text-xs tracking-[0.35em] uppercase text-gold-400">Respaldo integral</p>
+        <h2 class="font-display text-4xl text-gold-50">Acompañamiento experto en cada etapa</h2>
+        <p class="text-gold-100/70">Garantizamos protección, seguridad, privacidad y confianza en la intermediación,
+          negociación y cierre de operaciones inmobiliarias.</p>
+        <ul class="grid sm:grid-cols-2 gap-3">
+          <li class="flex items-center gap-3 px-5 py-4 border border-gold-400/15 rounded-sm bg-ink-800/60"><span class="h-1.5 w-1.5 rounded-full bg-gold-400"></span>Jurídico</li>
+          <li class="flex items-center gap-3 px-5 py-4 border border-gold-400/15 rounded-sm bg-ink-800/60"><span class="h-1.5 w-1.5 rounded-full bg-gold-400"></span>Fiscal</li>
+          <li class="flex items-center gap-3 px-5 py-4 border border-gold-400/15 rounded-sm bg-ink-800/60"><span class="h-1.5 w-1.5 rounded-full bg-gold-400"></span>Hipotecario</li>
+          <li class="flex items-center gap-3 px-5 py-4 border border-gold-400/15 rounded-sm bg-ink-800/60"><span class="h-1.5 w-1.5 rounded-full bg-gold-400"></span>Financiero</li>
+          <li class="flex items-center gap-3 px-5 py-4 border border-gold-400/15 rounded-sm bg-ink-800/60"><span class="h-1.5 w-1.5 rounded-full bg-gold-400"></span>Notarial</li>
+          <li class="flex items-center gap-3 px-5 py-4 border border-gold-400/15 rounded-sm bg-ink-800/60"><span class="h-1.5 w-1.5 rounded-full bg-gold-400"></span>Compra, venta y renta</li>
+        </ul>
       </div>
-      <form class="bg-white/5 border border-white/10 rounded-xl p-6 space-y-4">
+      <div class="space-y-6">
+        <p class="font-accent text-xs tracking-[0.35em] uppercase text-gold-400">Tecnología con IA</p>
+        <h2 class="font-display text-4xl text-gold-50">Inteligencia inmobiliaria para decisiones seguras</h2>
+        <p class="text-gold-100/70">Usamos tecnología avanzada para que compres mejor, reduzcas riesgos, generes ingresos y
+          reinviertas estratégicamente, construyendo patrimonio en 2 a 5 años.</p>
+        <ol class="space-y-3">
+          <li class="flex items-center justify-between px-5 py-4 border-l-2 border-gold-400 bg-gradient-to-r from-gold-400/10 to-transparent"><span>Comprar mejor</span><span class="font-display text-gold-400">I</span></li>
+          <li class="flex items-center justify-between px-5 py-4 border-l-2 border-gold-400 bg-gradient-to-r from-gold-400/10 to-transparent"><span>Reducir riesgos</span><span class="font-display text-gold-400">II</span></li>
+          <li class="flex items-center justify-between px-5 py-4 border-l-2 border-gold-400 bg-gradient-to-r from-gold-400/10 to-transparent"><span>Generar ingresos y reinvertir</span><span class="font-display text-gold-400">III</span></li>
+          <li class="flex items-center justify-between px-5 py-4 border-l-2 border-gold-400 bg-gradient-to-r from-gold-400/10 to-transparent"><span>Jubilación anticipada basada en rentas</span><span class="font-display text-gold-400">IV</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Valores -->
+  <section class="bg-ink-900 border-y border-gold-400/10">
+    <div class="container mx-auto px-6 py-14">
+      <p class="text-center font-accent text-xs tracking-[0.35em] uppercase text-gold-400 mb-8">Nuestros valores</p>
+      <ul class="flex flex-wrap justify-center gap-x-8 gap-y-4 font-display text-xl sm:text-2xl text-gold-200/80">
+        <li>Innovación</li><li aria-hidden="true" class="text-gold-600">◆</li>
+        <li>Seguridad</li><li aria-hidden="true" class="text-gold-600">◆</li>
+        <li>Protección</li><li aria-hidden="true" class="text-gold-600">◆</li>
+        <li>Privacidad</li><li aria-hidden="true" class="text-gold-600">◆</li>
+        <li>Confianza</li><li aria-hidden="true" class="text-gold-600">◆</li>
+        <li>Integridad</li><li aria-hidden="true" class="text-gold-600">◆</li>
+        <li>Transparencia</li><li aria-hidden="true" class="text-gold-600">◆</li>
+        <li>Cumplimiento</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="relative isolate overflow-hidden bg-gradient-to-b from-ink-950 via-ink-900 to-gold-950">
+    <div aria-hidden="true" class="absolute bottom-[-12rem] left-1/2 -translate-x-1/2 -z-10 h-[28rem] w-[48rem] rounded-full bg-gold-500/15 blur-3xl"></div>
+    <div class="container mx-auto px-6 py-24 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="space-y-5">
+        <p class="font-accent text-xs tracking-[0.35em] uppercase text-gold-400">Listo para empezar</p>
+        <h2 class="font-display text-4xl sm:text-5xl text-gold-50">Hablemos de tu próximo inmueble</h2>
+        <p class="text-gold-100/70 text-lg">Completa tu perfil y recibe opciones curadas, análisis financiero y
+          acompañamiento especializado solo cuando lo necesites.</p>
+      </div>
+      <form class="bg-ink-800/80 border border-gold-400/25 rounded-lg p-6 sm:p-8 space-y-5 backdrop-blur shadow-gold">
         <div>
-          <label for="name" class="block text-sm font-semibold text-amber-200">Nombre</label>
-          <input id="name" type="text" class="mt-1 w-full px-3 py-2 rounded bg-black/60 border border-white/20 text-white focus:border-amber-400 focus:outline-none" placeholder="Tu nombre" />
+          <label for="name" class="block text-xs uppercase tracking-wider text-gold-300 mb-1">Nombre</label>
+          <input id="name" name="name" type="text" autocomplete="name"
+                 class="w-full px-3 py-2.5 rounded-sm bg-ink-950 border border-gold-400/20 text-gold-50 placeholder:text-gold-100/30 focus:border-gold-400 focus:outline-none"
+                 placeholder="Tu nombre"/>
         </div>
         <div>
-          <label for="email" class="block text-sm font-semibold text-amber-200">Correo</label>
-          <input id="email" type="email" class="mt-1 w-full px-3 py-2 rounded bg-black/60 border border-white/20 text-white focus:border-amber-400 focus:outline-none" placeholder="nombre@correo.com" />
+          <label for="email" class="block text-xs uppercase tracking-wider text-gold-300 mb-1">Correo</label>
+          <input id="email" name="email" type="email" autocomplete="email"
+                 class="w-full px-3 py-2.5 rounded-sm bg-ink-950 border border-gold-400/20 text-gold-50 placeholder:text-gold-100/30 focus:border-gold-400 focus:outline-none"
+                 placeholder="nombre@correo.com"/>
         </div>
         <div>
-          <label for="mensaje" class="block text-sm font-semibold text-amber-200">Interés</label>
-          <textarea id="mensaje" rows="3" class="mt-1 w-full px-3 py-2 rounded bg-black/60 border border-white/20 text-white focus:border-amber-400 focus:outline-none" placeholder="Cuéntanos qué buscas"></textarea>
+          <label for="mensaje" class="block text-xs uppercase tracking-wider text-gold-300 mb-1">Interés</label>
+          <textarea id="mensaje" name="mensaje" rows="3"
+                    class="w-full px-3 py-2.5 rounded-sm bg-ink-950 border border-gold-400/20 text-gold-50 placeholder:text-gold-100/30 focus:border-gold-400 focus:outline-none"
+                    placeholder="Cuéntanos qué buscas"></textarea>
         </div>
-        <button type="submit" class="w-full bg-amber-400 text-black font-semibold py-3 rounded shadow hover:-translate-y-0.5 hover:shadow-lg transition">Quiero hablar con un especialista</button>
+        <button type="submit"
+                class="w-full bg-gold-gradient text-ink-950 font-semibold uppercase tracking-wider text-sm py-3.5 rounded-sm shadow-gold hover:-translate-y-0.5 hover:brightness-110 transition">
+          Quiero hablar con un especialista
+        </button>
       </form>
     </div>
   </section>
 </main>
-<footer></footer>
+
+<footer class="bg-ink-950 border-t border-gold-400/20 text-gold-100/60">
+  <div class="container mx-auto px-6 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div class="space-y-3 lg:col-span-2">
+      <p class="font-display text-3xl text-gold-200"><span class="text-gold-50">Real</span>tor's <strong class="text-gold-400">Pro</strong></p>
+      <p class="max-w-sm text-sm">Plataforma inmobiliaria digital para construir patrimonio y generar ingresos en las
+        mejores playas de México.</p>
+    </div>
+    <nav aria-label="Explorar" class="space-y-3 text-sm">
+      <p class="text-xs uppercase tracking-[0.25em] text-gold-400">Explorar</p>
+      <ul class="space-y-2">
+        <li><a href="/buying" class="hover:text-gold-300 transition">Compra</a></li>
+        <li><a href="/renting" class="hover:text-gold-300 transition">Renta</a></li>
+        <li><a href="/selling" class="hover:text-gold-300 transition">Venta</a></li>
+        <li><a href="/business" class="hover:text-gold-300 transition">Negocios</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Empresa" class="space-y-3 text-sm">
+      <p class="text-xs uppercase tracking-[0.25em] text-gold-400">Empresa</p>
+      <ul class="space-y-2">
+        <li><a href="/about" class="hover:text-gold-300 transition">Nosotros</a></li>
+        <li><a href="/university" class="hover:text-gold-300 transition">Realtors University</a></li>
+        <li><a href="/apps" class="hover:text-gold-300 transition">Plataformas</a></li>
+        <li><a href="#contacto" class="hover:text-gold-300 transition">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="border-t border-gold-400/10">
+    <p class="container mx-auto px-6 py-6 text-xs text-gold-100/40">&copy; 2026 Realtor's Pro. Todos los derechos reservados.</p>
+  </div>
+</footer>
 <!-- Add your site or application content here -->
 <script src="js/app.js"></script>
 <script>
