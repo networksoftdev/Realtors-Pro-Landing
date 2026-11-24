@@ -71,7 +71,7 @@
     <linearGradient id="Degradado_sin_nombre_551-3" data-name="Degradado sin nombre 551" y1="183.41" y2="193.41" xlink:href="#Degradado_sin_nombre_551"/>
     <linearGradient id="Degradado_sin_nombre_551-4" data-name="Degradado sin nombre 551" x1="181.47" y1="183.41" x2="181.47" y2="193.41" xlink:href="#Degradado_sin_nombre_551"/>
   </defs>
-  <rect width="512" height="512" rx="96" fill="#0f0f0f"/>
+  <rect width="512" height="512" rx="96" fill="#f0f0f0"/>
   <g id="Capa_9" data-name="Capa 9" transform="translate(80.12 52.25)">
     <g id="Propuesta_2026" data-name="Propuesta 2026">
       <g id="icon">
@@ -111,5 +111,5 @@
         </g>
       </g>
     </g>
-  </g>  
+  </g>
 </svg>
