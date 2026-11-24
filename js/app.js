@@ -53,7 +53,11 @@ function toggleMenuListener(toggle_click_evt) {
 }
 
 function toggleKeyListener(evt) {
-  if (evt.repeat) return
+  if (evt.repeat) {
+    evt.preventDefault()
+    evt.stopPropagation()
+    return
+  }
   if (evt.key === 'Enter' || evt.key === ' ') {
     evt.preventDefault()
     evt.stopPropagation()
@@ -81,10 +85,7 @@ function sidebarToggles() {
 function setSidebarState(open) {
   const sidebar = document.querySelector(SIDEBAR_SELECTOR)
   if (!sidebar) return
-  if (sidebar.classList.contains(SIDEBAR_ACTIVE_CLASS) === open) {
-    console.debug('setSidebarState(): already', open ? 'open' : 'closed')
-    return
-  }
+  const changed = sidebar.classList.contains(SIDEBAR_ACTIVE_CLASS) !== open
   sidebar.classList.toggle(SIDEBAR_ACTIVE_CLASS, open)
   sidebar.setAttribute('aria-hidden', (!open).toString())
   sidebar.inert = !open
@@ -93,6 +94,10 @@ function setSidebarState(open) {
     toggle.setAttribute('aria-expanded', open.toString())
     toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú')
   })
+  if (!changed) {
+    console.debug('setSidebarState(): already', open ? 'open' : 'closed')
+    return
+  }
   console.debug('setSidebarState():', open)
   if (open) {
     sidebar.querySelector('.offcanvas-close')?.focus()
@@ -173,6 +178,7 @@ function render_sidebar_menu(menu) {
   document.body.classList.add('has-[.active-offcanvas]:overflow-hidden')
   document.body.prepend(offcanvas)
   document.body.prepend(backdrop)
+  setSidebarState(false)
   addTrackedEvent({element: document, event: 'keydown', listener: sidebarKeyListener})
 }
 
