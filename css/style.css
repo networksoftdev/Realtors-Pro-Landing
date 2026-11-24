@@ -18,6 +18,7 @@
   --primary-link-pro: #604e04;
   --primary-text-pro: #3a3005;
   --primary-text: #222;
+  --primary-gray: #a39e93;
   --go-to-home-shadow: inset 0 -6px 21px -5px var(--primary-bg);
 
   .dark {
@@ -302,6 +303,18 @@ a:visited {
 a:hover,
 a:focus-visible {
   color: var(--primary-link-hover, #e2c56b);
+}
+
+/* Footer anchors use the theme white, gold on hover */
+footer {
+  --primary-link: #fbf8ee;
+  --primary-link-hover: #d4af37;
+}
+
+/* Logo anchors use the theme gray, gold on hover */
+.logo-header-left {
+  --primary-link: var(--primary-gray, #a39e93);
+  --primary-link-hover: #d4af37;
 }
 
 .smart-sticky {
