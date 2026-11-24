@@ -33,6 +33,8 @@ function resolveToggleTarget(toggle) {
 function toggleMenuListener(toggle_click_evt) {
   // currentTarget is the element the listener is bound to, even when a child (<span>) is clicked
   const toggle = toggle_click_evt.currentTarget
+  toggle_click_evt.preventDefault()
+  toggle_click_evt.stopPropagation()
   console.debug('toggle_evt?:', toggle)
   const menu = resolveToggleTarget(toggle)
   if (!menu) {
@@ -51,6 +53,7 @@ function toggleMenuListener(toggle_click_evt) {
 }
 
 function toggleKeyListener(evt) {
+  if (evt.repeat) return
   if (evt.key === 'Enter' || evt.key === ' ') {
     evt.preventDefault()
     evt.currentTarget.click()
@@ -74,9 +77,23 @@ function sidebarToggles() {
   return document.querySelectorAll(`[data-toggle-menu="${SIDEBAR_SELECTOR}"]`)
 }
 
+// Ignore toggles while the drawer is animating (absorbs double clicks, ghost taps and key auto-repeat)
+const SIDEBAR_TOGGLE_LOCK_MS = 350
+let sidebarLockedUntil = 0
+
 function setSidebarState(open) {
   const sidebar = document.querySelector(SIDEBAR_SELECTOR)
   if (!sidebar) return
+  const now = Date.now()
+  if (sidebar.classList.contains(SIDEBAR_ACTIVE_CLASS) === open) {
+    console.debug('setSidebarState(): already', open ? 'open' : 'closed')
+    return
+  }
+  if (now < sidebarLockedUntil) {
+    console.debug('setSidebarState(): ignored, transition in progress')
+    return
+  }
+  sidebarLockedUntil = now + SIDEBAR_TOGGLE_LOCK_MS
   sidebar.classList.toggle(SIDEBAR_ACTIVE_CLASS, open)
   sidebar.setAttribute('aria-hidden', (!open).toString())
   sidebar.inert = !open
@@ -141,6 +158,10 @@ function render_sidebar_menu(menu) {
   cancel_sidebar.setAttribute('aria-label', 'Cerrar menú')
   cancel_sidebar.classList.add(...'fa fa-close offcanvas-close absolute top-6 right-6 w-10 h-10 p-2 rounded-full border border-gold-400/40 hover:border-gold-400 bg-transparent cursor-pointer'.split(" "))
   addTrackedEvent({element: cancel_sidebar, event: 'click', listener: closeSidebar})
+  // a held Enter/Space from the hamburger must not "click" the close button once focus moves here
+  addTrackedEvent({element: cancel_sidebar, event: 'keydown', listener: evt => {
+    if (evt.repeat) evt.preventDefault()
+  }})
 
   const sidebar = document.createElement('li')
   sidebar.classList.add('!border-0')
@@ -180,8 +201,13 @@ function addTrackedEvent({element = document, event = 'DOMContentLoaded', listen
 
 /** execution */
 
-testEventTracker()
-addTrackedEvent({});
+if (!window.__REALTORS_PRO_APP__) {
+  window.__REALTORS_PRO_APP__ = true
+  testEventTracker()
+  addTrackedEvent({});
+} else {
+  console.debug('app.js already initialised, skipping')
+}
 
 // document.addEventListener('DOMContentLoaded', domContentLoadedListener/*, {passive: true}*/)
 
