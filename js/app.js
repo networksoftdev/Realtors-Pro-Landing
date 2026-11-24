@@ -56,6 +56,7 @@ function toggleKeyListener(evt) {
   if (evt.repeat) return
   if (evt.key === 'Enter' || evt.key === ' ') {
     evt.preventDefault()
+    evt.stopPropagation()
     evt.currentTarget.click()
   }
 }
@@ -77,29 +78,20 @@ function sidebarToggles() {
   return document.querySelectorAll(`[data-toggle-menu="${SIDEBAR_SELECTOR}"]`)
 }
 
-// Ignore toggles while the drawer is animating (absorbs double clicks, ghost taps and key auto-repeat)
-const SIDEBAR_TOGGLE_LOCK_MS = 350
-let sidebarLockedUntil = 0
-
 function setSidebarState(open) {
   const sidebar = document.querySelector(SIDEBAR_SELECTOR)
   if (!sidebar) return
-  const now = Date.now()
   if (sidebar.classList.contains(SIDEBAR_ACTIVE_CLASS) === open) {
     console.debug('setSidebarState(): already', open ? 'open' : 'closed')
     return
   }
-  if (now < sidebarLockedUntil) {
-    console.debug('setSidebarState(): ignored, transition in progress')
-    return
-  }
-  sidebarLockedUntil = now + SIDEBAR_TOGGLE_LOCK_MS
   sidebar.classList.toggle(SIDEBAR_ACTIVE_CLASS, open)
   sidebar.setAttribute('aria-hidden', (!open).toString())
   sidebar.inert = !open
   sidebarToggles().forEach(toggle => {
     toggle.classList.toggle(toggle.dataset.toggle ?? 'done', open)
     toggle.setAttribute('aria-expanded', open.toString())
+    toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú')
   })
   console.debug('setSidebarState():', open)
   if (open) {
@@ -210,4 +202,3 @@ if (!window.__REALTORS_PRO_APP__) {
 }
 
 // document.addEventListener('DOMContentLoaded', domContentLoadedListener/*, {passive: true}*/)
-
