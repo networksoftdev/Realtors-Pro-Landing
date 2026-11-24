@@ -5,6 +5,10 @@ module.exports = {
     extend: {
       colors: {
         'primary': 'var(--primary, #0f0f0f)',
+        'primary-link': {
+          DEFAULT: 'var(--primary-link, #d4af37)',
+          hover: 'var(--primary-link-hover, #e2c56b)',
+        },
         // Black → gold brand palette
         ink: {
           DEFAULT: '#0a0a0a',

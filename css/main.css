@@ -1049,8 +1049,8 @@ video {
   border-color: rgb(212 175 55 / 0.5);
 }
 
-.border-gold-400\/70 {
-  border-color: rgb(212 175 55 / 0.7);
+.border-primary-link {
+  border-color: var(--primary-link, #d4af37);
 }
 
 .bg-gold-400 {
@@ -1456,6 +1456,10 @@ video {
   color: rgb(5 5 5 / var(--tw-text-opacity, 1));
 }
 
+.text-primary-link {
+  color: var(--primary-link, #d4af37);
+}
+
 .text-transparent {
   color: transparent;
 }
@@ -1591,16 +1595,6 @@ video {
 .hover\:bg-ink-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(18 18 18 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:text-gold-100:hover {
-  --tw-text-opacity: 1;
-  color: rgb(245 237 208 / var(--tw-text-opacity, 1));
-}
-
-.hover\:text-gold-300:hover {
-  --tw-text-opacity: 1;
-  color: rgb(226 197 107 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-ink-950:hover {
