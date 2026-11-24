@@ -313,7 +313,7 @@ footer {
 
 /* Logo anchors use the theme gray, gold on hover */
 .logo-header-left {
-  --primary-link: var(--primary-gray, #a39e93);
+  --primary-link: var(--primary-text, #a39e93);
   --primary-link-hover: #d4af37;
 }
 
