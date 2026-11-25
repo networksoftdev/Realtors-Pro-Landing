@@ -5,10 +5,10 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    liveReload: true,
-    hot: true,
+    liveReload: false,
+    hot: false,
     /*open: true,*/
-    allowedHosts: "all", // That solved it
+    allowedHosts: "all",
     static: ['./'],
   },
 });

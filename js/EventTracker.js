@@ -63,7 +63,7 @@ export function test(elementId = 'myElement') {
   const tracker = new EventTracker(element)
 
   function handleClick() {
-    console.log('Element clicked!')
+    console.debug('Element clicked!')
   }
 
 // Agregar event listener
