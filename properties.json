@@ -1,0 +1,300 @@
+{
+  "catalog": "Vivienda nueva en Puerto Vallarta y Bahía de Banderas",
+  "properties": [
+    {
+      "number": 1,
+      "name": "ECOTERRA",
+      "location": "Puerto Vallarta, Jalisco",
+      "address": "Carretera Ixtapa–Vallarta / Circuito Bahía de Kino, Col. Ecoterra, Puerto Vallarta, Jalisco.",
+      "technical_specs": {
+        "type": "Departamento",
+        "area": "44–48 m² aprox.",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "parking": 1,
+        "reference_price": "$1,000,000 MXN",
+        "approximate_down_payment_10_percent": "$100,000 MXN",
+        "approximate_loan_90_percent": "$900,000 MXN",
+        "approximate_monthly_payment": "$9,000 MXN",
+        "verifiable_monthly_income": "$30,000 MXN"
+      },
+      "amenities": [
+        "Alberca",
+        "Áreas verdes",
+        "Palapa",
+        "Canchas deportivas",
+        "Juegos infantiles",
+        "Áreas comunes"
+      ],
+      "ideal_for": "Primera vivienda y familias que buscan una propiedad nueva con un precio de entrada accesible.",
+      "financing": [
+        "Infonavit",
+        "FOVISSSTE",
+        "Crédito bancario (sujeto a autorización)"
+      ]
+    },
+    {
+      "number": 2,
+      "name": "COTO MISTRAL",
+      "location": "San Vicente, Bahía de Banderas, Nayarit",
+      "location_description": "Se encuentra en una zona de crecimiento, con acceso a servicios, comercios, escuelas y vialidades principales. Aproximadamente a 10 km de Playa Nuevo Vallarta, 7.4 km de Flamingos Golf y 9.6 km de Vidanta World.",
+      "address": "Calle Pez Dorado, Valle Marlín, San Vicente, Bahía de Banderas, Nayarit, C.P. 63737.",
+      "technical_specs": {
+        "type": "Departamento",
+        "area": "54.4 m²",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "parking": 1,
+        "starting_price": "$998,000 MXN",
+        "approximate_down_payment_10_percent": "$99,800 MXN",
+        "approximate_loan_90_percent": "$898,200 MXN",
+        "approximate_monthly_payment": "$9,000 MXN",
+        "verifiable_monthly_income": "$30,000 MXN"
+      },
+      "development": "60 departamentos dentro de un conjunto habitacional privado, con acceso controlado y portón de acceso.",
+      "layout": [
+        "Sala",
+        "Comedor",
+        "Cocineta",
+        "2 recámaras",
+        "Baño completo",
+        "Patio de servicio con área de lavado",
+        "Espacio para clóset en ambas recámaras"
+      ],
+      "amenities_and_security": [
+        "Acceso controlado",
+        "Portón de acceso",
+        "Conjunto privado"
+      ],
+      "ideal_for": "Familias que buscan su primera vivienda, compradores que quieren dejar de pagar renta o inversionistas que buscan entrar al mercado de Bahía de Banderas con un precio de entrada cercano al millón de pesos.",
+      "financing": [
+        "Crédito Infonavit",
+        "Fovissste",
+        "Hipotecario bancario"
+      ]
+    },
+    {
+      "number": 2,
+      "name": "ZITADELA",
+      "location": "San Clemente de Lima, Bahía de Banderas, Nayarit",
+      "address": "Zona San Clemente de Lima, junto al Hospital General de Zona No. 33.",
+      "technical_specs": {
+        "type": "Departamento",
+        "area": "51.7 m²",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "parking": 1,
+        "reference_price": "$1,345,000 MXN",
+        "approximate_down_payment_10_percent": "$134,500 MXN",
+        "approximate_loan_90_percent": "$1,210,500 MXN",
+        "approximate_monthly_payment": "$12,100 MXN",
+        "verifiable_monthly_income": "$40,300 MXN"
+      },
+      "features": [
+        "Sala-comedor",
+        "Cocina",
+        "Área de lavado",
+        "2 recámaras",
+        "Baño completo",
+        "Estacionamiento"
+      ],
+      "amenities": [
+        "Alberca",
+        "Casa club",
+        "Áreas verdes",
+        "BBQ",
+        "Cancha de mini fútbol",
+        "Voleibol",
+        "Gimnasio al aire libre",
+        "Trota pista",
+        "Juegos infantiles",
+        "Parque para perros",
+        "Áreas de convivencia"
+      ],
+      "ideal_for": "Familias que buscan vivienda nueva, muchas amenidades y un precio de entrada competitivo.",
+      "financing": [
+        "Infonavit",
+        "FOVISSSTE",
+        "Crédito bancario (sujeto a perfil)"
+      ]
+    },
+    {
+      "number": 3,
+      "name": "SAN VICENTE 330",
+      "location": "San Vicente, Bahía de Banderas, Nayarit",
+      "address": "Calle Fuentes de Venus #330, San Vicente, Bahía de Banderas, Nayarit.",
+      "technical_specs": {
+        "type": "Departamento",
+        "area": "55 m²",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "parking": 1,
+        "reference_price": "$1,145,000 MXN",
+        "approximate_down_payment_10_percent": "$114,500 MXN",
+        "approximate_loan_90_percent": "$1,030,500 MXN",
+        "approximate_monthly_payment": "$10,300 MXN",
+        "verifiable_monthly_income": "$34,300 MXN"
+      },
+      "development": "156 departamentos, distribuidos en 13 torres de 3 niveles.",
+      "amenities": [
+        "Alberca",
+        "Áreas verdes",
+        "Asadores",
+        "Cancha de voleibol",
+        "Cancha de básquetbol",
+        "Kiosco",
+        "Áreas de convivencia"
+      ],
+      "ideal_for": "Familias que buscan su primera vivienda, dejar de pagar renta o adquirir una propiedad como inversión.",
+      "financing": [
+        "Infonavit",
+        "FOVISSSTE",
+        "Crédito bancario (sujeto a autorización)"
+      ]
+    },
+    {
+      "number": 4,
+      "name": "SENDAS",
+      "location": "Ixtapa, Puerto Vallarta, Jalisco",
+      "location_description": "Con conexión hacia las principales zonas de la ciudad y aproximadamente 10–12 minutos del aeropuerto.",
+      "address": "Av. Verde Vallarta #507, Col. Ejido Ixtapa, Puerto Vallarta, Jalisco.",
+      "technical_specs": {
+        "type": "Departamento",
+        "area": "57 m²",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "parking": 1,
+        "reference_price": "$1,650,000 MXN",
+        "approximate_down_payment_10_percent": "$165,000 MXN",
+        "approximate_loan_90_percent": "$1,485,000 MXN",
+        "approximate_monthly_payment": "$14,900 MXN",
+        "verifiable_monthly_income": "$49,700 MXN"
+      },
+      "features": [
+        "Sala-comedor",
+        "Cocina equipada",
+        "Área de lavado",
+        "2 recámaras",
+        "Baño completo",
+        "Estacionamiento",
+        "Terraza"
+      ],
+      "amenities": [
+        "Alberca",
+        "Chapoteadero",
+        "Casa club",
+        "Áreas verdes",
+        "Área de picnic",
+        "Asadores",
+        "Kids Club",
+        "Pet Club",
+        "Área comercial",
+        "Andadores",
+        "Seguridad 24/7"
+      ],
+      "ideal_for": "Familias que buscan un departamento nuevo de 57 m², con amenidades, seguridad y una buena relación entre precio y ubicación.",
+      "financing": [
+        "Infonavit",
+        "FOVISSSTE",
+        "Cofinavit",
+        "Crédito bancario"
+      ]
+    },
+    {
+      "number": 5,
+      "name": "ALDEA HORTUS",
+      "location": "Tondoroque / Mezcales, Bahía de Banderas, Nayarit",
+      "location_description": "Cerca de Flamingos Golf Club, Nuevo Vallarta y las playas de la Riviera Nayarit.",
+      "address": "Aldea Hortus, Tondoroque, Bahía de Banderas, Nayarit.",
+      "technical_specs": {
+        "type": "Departamento — Modelo Alcatraz",
+        "built_area": "63 m²",
+        "terrace": "7 m²",
+        "total_area": "70 m² aprox.",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "parking": 1,
+        "reference_price": "$1,990,000 MXN",
+        "approximate_down_payment_10_percent": "$199,000 MXN",
+        "approximate_loan_90_percent": "$1,791,000 MXN",
+        "approximate_monthly_payment": "$17,900 MXN",
+        "verifiable_monthly_income": "$59,700 MXN"
+      },
+      "features": [
+        "Cocina integral",
+        "Closets",
+        "Sala-comedor",
+        "Área de servicio",
+        "Terraza privada",
+        "Elevador"
+      ],
+      "amenities": [
+        "Alberca semiolímpica",
+        "Chapoteadero",
+        "Tenis",
+        "Pickleball",
+        "Voleibol",
+        "Fútbol",
+        "Casa club",
+        "Ciclovía",
+        "Senderos",
+        "Juegos infantiles",
+        "BBQ",
+        "Área para mascotas",
+        "Zona zen",
+        "Áreas verdes",
+        "Seguridad 24/7"
+      ],
+      "ideal_for": "Familias que buscan mayor superficie, dos baños y una gran variedad de amenidades.",
+      "financing": [
+        "Infonavit",
+        "FOVISSSTE",
+        "Crédito bancario (sujeto a autorización)"
+      ]
+    },
+    {
+      "number": 6,
+      "name": "ITZAE RESIDENCIAL",
+      "location": "Los Tamarindos / Ixtapa, Puerto Vallarta, Jalisco",
+      "address": "Paseo de la Industria, Los Tamarindos, Ixtapa, Puerto Vallarta, Jalisco.",
+      "technical_specs": {
+        "type": "Departamento",
+        "area": "63.36 m²",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "parking": 1,
+        "reference_price": "$1,993,250 MXN",
+        "approximate_down_payment_10_percent": "$199,325 MXN",
+        "approximate_loan_90_percent": "$1,793,925 MXN",
+        "approximate_monthly_payment": "$17,900 MXN",
+        "verifiable_monthly_income": "$59,700 MXN"
+      },
+      "features": [
+        "Sala",
+        "Comedor",
+        "Cocina",
+        "Balcón",
+        "2 recámaras",
+        "Baño completo",
+        "Área de lavado",
+        "Estacionamiento"
+      ],
+      "development": "Comunidad privada con 70 viviendas, acceso controlado y áreas comunes.",
+      "amenities": [
+        "Casa club",
+        "Alberca",
+        "Terraza",
+        "Áreas verdes",
+        "Gimnasio",
+        "Coworking",
+        "Acceso controlado"
+      ],
+      "ideal_for": "Quienes buscan una propiedad nueva dentro de una comunidad privada y con mayor superficie que un departamento compacto.",
+      "financing": [
+        "Infonavit",
+        "FOVISSSTE",
+        "Crédito bancario (sujeto a autorización)"
+      ]
+    }
+  ]
+}
