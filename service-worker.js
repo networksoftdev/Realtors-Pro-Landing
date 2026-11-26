@@ -7,6 +7,9 @@ const APP_SHELL = [
   '/icon.svg',
   '/favicon.ico',
   '/favicon.svg',
+  '/properties.json',
+  '/js/property-cards.js',
+  '/js/property-detail.js',
   '/css/main.css',
   '/css/style.css',
   '/css/icons.css',
@@ -37,6 +40,26 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const requestUrl = new URL(event.request.url);
   if (event.request.method !== 'GET' || requestUrl.origin !== self.location.origin) {
+    return;
+  }
+
+  if (requestUrl.pathname === '/properties.json') {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          if (response.ok) {
+            const responseCopy = response.clone();
+            event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseCopy)));
+          }
+          return response;
+        })
+        .catch((error) => caches.match(event.request).then((cachedResponse) => {
+          if (cachedResponse) {
+            return cachedResponse;
+          }
+          throw error;
+        }))
+    );
     return;
   }
 

@@ -212,55 +212,8 @@
         </a>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <article class="group/card bg-ink-800 border border-gold-400/10 rounded-lg overflow-hidden hover:border-gold-400/50 hover:shadow-gold transition">
-          <div class="relative h-56 bg-gradient-to-br from-gold-900 via-ink-700 to-ink-950">
-            <span class="absolute top-4 left-4 bg-gold-400 text-ink-950 text-[0.65rem] font-semibold uppercase tracking-wider px-3 py-1 rounded-sm">Preventa</span>
-            <span class="absolute bottom-4 right-4 font-display text-2xl text-gold-200">$6.9M MXN</span>
-          </div>
-          <div class="p-6 space-y-3">
-            <p class="text-xs uppercase tracking-wider text-gold-400">Tulum · Residencial</p>
-            <h3 class="font-display text-2xl text-gold-50 group-hover/card:text-gold-300 transition">Penthouse frente a la selva</h3>
-            <ul class="flex gap-5 text-sm text-gold-100/60 pt-2 border-t border-gold-400/10">
-              <li>3 rec.</li>
-              <li>3 baños</li>
-              <li>185 m²</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="group/card bg-ink-800 border border-gold-400/10 rounded-lg overflow-hidden hover:border-gold-400/50 hover:shadow-gold transition">
-          <div class="relative h-56 bg-gradient-to-br from-ink-600 via-gold-800 to-ink-950">
-            <span class="absolute top-4 left-4 bg-ink-950/80 border border-gold-400/50 text-gold-200 text-[0.65rem] font-semibold uppercase tracking-wider px-3 py-1 rounded-sm">Renta vacacional</span>
-            <span class="absolute bottom-4 right-4 font-display text-2xl text-gold-200">$12.4M MXN</span>
-          </div>
-          <div class="p-6 space-y-3">
-            <p class="text-xs uppercase tracking-wider text-gold-400">Los Cabos · Residencial</p>
-            <h3 class="font-display text-2xl text-gold-50 group-hover/card:text-gold-300 transition">Villa con vista al Mar de Cortés</h3>
-            <ul class="flex gap-5 text-sm text-gold-100/60 pt-2 border-t border-gold-400/10">
-              <li>4 rec.</li>
-              <li>5 baños</li>
-              <li>320 m²</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="group/card bg-ink-800 border border-gold-400/10 rounded-lg overflow-hidden hover:border-gold-400/50 hover:shadow-gold transition">
-          <div class="relative h-56 bg-gradient-to-br from-gold-950 via-ink-800 to-gold-700">
-            <span class="absolute top-4 left-4 bg-gold-400 text-ink-950 text-[0.65rem] font-semibold uppercase tracking-wider px-3 py-1 rounded-sm">Alta plusvalía</span>
-            <span class="absolute bottom-4 right-4 font-display text-2xl text-gold-200">$18.7M MXN</span>
-          </div>
-          <div class="p-6 space-y-3">
-            <p class="text-xs uppercase tracking-wider text-gold-400">Cancún · Comercial</p>
-            <h3 class="font-display text-2xl text-gold-50 group-hover/card:text-gold-300 transition">Local comercial en zona hotelera</h3>
-            <ul class="flex gap-5 text-sm text-gold-100/60 pt-2 border-t border-gold-400/10">
-              <li>Planta baja</li>
-              <li>2 baños</li>
-              <li>240 m²</li>
-            </ul>
-          </div>
-        </article>
-      </div>
+      <p data-property-status role="status" class="text-gold-100/60">Cargando propiedades...</p>
+      <div data-property-cards="featured" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
     </div>
   </section>
 
@@ -469,6 +422,7 @@
   </div>
 </footer>
 <!-- Add your site or application content here -->
+<script src="/js/property-cards.js" defer></script>
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
