@@ -294,14 +294,12 @@ body {
 }
 
 /* All anchors use the theme primary (gold) */
-a,
-a:visited {
+:where(a, a:visited) {
   color: var(--primary-link, #d4af37);
   transition: color .15s ease-in-out;
 }
 
-a:hover,
-a:focus-visible {
+:where(a:hover, a:focus-visible) {
   color: var(--primary-link-hover, #e2c56b);
 }
 
