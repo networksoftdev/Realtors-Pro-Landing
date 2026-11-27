@@ -3,6 +3,7 @@ const PROPERTY_CARD_BACKGROUNDS = [
   'from-ink-600 via-gold-800 to-ink-950',
   'from-gold-950 via-ink-800 to-gold-700',
 ];
+const PROPERTIES_API_URL = 'https://realtors-pro.free.beeceptor.com/properties';
 
 function createPropertyDetail(text) {
   const detail = document.createElement('li');
@@ -101,7 +102,7 @@ async function renderPropertyCards() {
 
   const statuses = document.querySelectorAll('[data-property-status]');
   try {
-    const response = await fetch('/properties.json');
+    const response = await fetch(PROPERTIES_API_URL);
     if (!response.ok) {
       throw new Error(`No se pudo cargar el catálogo de propiedades (${response.status}).`);
     }

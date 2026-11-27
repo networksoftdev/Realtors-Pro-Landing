@@ -14,6 +14,7 @@ const PROPERTY_SPEC_LABELS = {
   approximate_monthly_payment: 'Mensualidad aproximada',
   verifiable_monthly_income: 'Ingresos mensuales comprobables',
 };
+const PROPERTIES_API_URL = 'https://realtors-pro.free.beeceptor.com/properties';
 
 function normalizePropertyIdentifier(value) {
   return value
@@ -132,7 +133,7 @@ async function loadPropertyDetail() {
   }
 
   try {
-    const response = await fetch('/properties.json');
+    const response = await fetch(PROPERTIES_API_URL);
     if (!response.ok) {
       throw new Error(`No se pudo cargar el catálogo de propiedades (${response.status}).`);
     }

@@ -24,7 +24,6 @@ module.exports = merge(common, {
         { from: 'service-worker.js', to: 'service-worker.js' },
         { from: '404.html', to: '404.html' },
         { from: 'site.webmanifest', to: 'site.webmanifest' },
-        { from: 'properties.json', to: 'properties.json' },
         { from: 'js/property-cards.js', to: 'js/property-cards.js' },
         { from: 'js/property-detail.js', to: 'js/property-detail.js' },
         { from: 'property', to: 'property' },
