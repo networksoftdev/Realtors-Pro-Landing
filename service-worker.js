@@ -1,4 +1,4 @@
-const CACHE_NAME = 'realtors-pro-v1';
+const CACHE_NAME = 'realtors-pro-v2';
 const APP_SHELL = [
   '/',
   '/site.webmanifest',

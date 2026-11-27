@@ -11,6 +11,51 @@ function createPropertyDetail(text) {
   return detail;
 }
 
+function getYouTubeVideoId(url) {
+  if (typeof url !== 'string') {
+    return null;
+  }
+
+  try {
+    const parsedUrl = new URL(url);
+    const host = parsedUrl.hostname.toLowerCase();
+    let videoId = null;
+
+    if (host === 'youtu.be') {
+      videoId = parsedUrl.pathname.split('/').filter(Boolean)[0];
+    } else if (['youtube.com', 'www.youtube.com', 'm.youtube.com', 'youtube-nocookie.com', 'www.youtube-nocookie.com'].includes(host)) {
+      videoId = parsedUrl.pathname === '/watch'
+        ? parsedUrl.searchParams.get('v')
+        : parsedUrl.pathname.split('/').filter(Boolean).pop();
+    }
+
+    return videoId && /^[a-zA-Z0-9_-]{11}$/.test(videoId) ? videoId : null;
+  } catch {
+    return null;
+  }
+}
+
+function createYouTubePreview(videoId) {
+  const parameters = new URLSearchParams({
+    autoplay: '1',
+    controls: '0',
+    loop: '1',
+    mute: '1',
+    playlist: videoId,
+    playsinline: '1',
+    rel: '0',
+  });
+  const frame = document.createElement('iframe');
+  frame.className = 'property-card-video';
+  frame.src = `https://www.youtube-nocookie.com/embed/${videoId}?${parameters.toString()}`;
+  frame.title = 'Vista previa del video de la propiedad';
+  frame.allow = 'autoplay; encrypted-media';
+  frame.referrerPolicy = 'strict-origin-when-cross-origin';
+  frame.tabIndex = -1;
+  frame.setAttribute('aria-hidden', 'true');
+  return frame;
+}
+
 function createPropertyCard(property, index, layout) {
   const specs = property.technical_specs;
   const area = specs.total_area || specs.area || specs.built_area;
@@ -44,6 +89,9 @@ function createPropertyCard(property, index, layout) {
   if (layout === 'featured') {
     const visual = document.createElement('div');
     visual.className = `relative h-56 bg-gradient-to-br ${PROPERTY_CARD_BACKGROUNDS[index % PROPERTY_CARD_BACKGROUNDS.length]}`;
+    const firstVideo = Array.isArray(property.videos)
+      ? property.videos.find((video) => video && getYouTubeVideoId(video.url))
+      : null;
 
     const type = document.createElement('span');
     type.className = 'absolute top-4 left-4 bg-ink-950/80 border border-gold-400/50 text-gold-200 text-[0.65rem] font-semibold uppercase tracking-wider px-3 py-1 rounded-sm';
@@ -53,6 +101,35 @@ function createPropertyCard(property, index, layout) {
     priceLabel.className = 'absolute bottom-4 right-4 font-display text-2xl text-gold-200';
     priceLabel.textContent = price;
     visual.append(type, priceLabel);
+
+    if (firstVideo) {
+      let previewFrame = null;
+      const startPreview = () => {
+        if (!previewFrame) {
+          previewFrame = createYouTubePreview(getYouTubeVideoId(firstVideo.url));
+          visual.prepend(previewFrame);
+        }
+      };
+      const stopPreview = () => {
+        if (previewFrame) {
+          previewFrame.remove();
+          previewFrame = null;
+        }
+      };
+
+      visual.addEventListener('mouseenter', startPreview);
+      visual.addEventListener('mouseleave', () => {
+        if (!propertyLink.matches(':focus-within')) {
+          stopPreview();
+        }
+      });
+      propertyLink.addEventListener('focusin', startPreview);
+      propertyLink.addEventListener('focusout', () => {
+        if (!visual.matches(':hover')) {
+          stopPreview();
+        }
+      });
+    }
 
     const content = document.createElement('div');
     content.className = 'p-6 space-y-3';
